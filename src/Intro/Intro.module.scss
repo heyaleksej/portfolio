@@ -1,0 +1,57 @@
+@import "./src/assets/sass/variables";
+
+.box {
+  font-weight: 900;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #484646;
+  text-decoration: none;
+  width: 44%;
+  height: 100%;
+  padding-left: 7%;
+  text-shadow: 1px 1px 1px white;
+
+
+  .textIntro {
+    font-size: 24px;
+  }
+
+  .textIntroJob {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .textIntroName {
+    font-size: 36px;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .textIntroAccent {
+    color: $accentText;
+  }
+  .typing{
+    margin-top: 20px;
+    color: #b4480d
+  ;
+  }
+}
+
+@media (max-width: 600px) {
+  .box {
+    font-size: 20px;
+    width: 100%;
+    height: 20%;
+
+    .textIntro {
+      font-size: 16px;
+    }
+
+    .textIntroName {
+      font-size: 25px;
+    }
+  }
+}

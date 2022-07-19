@@ -1,0 +1,72 @@
+
+.wrapper {
+  overflow: hidden;
+}
+
+.avatar {
+  background-image: url(./commonfiles/ava.jpg);
+  padding: 0;
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  width: 30.3333333333%;
+}
+
+
+.rightBox {
+  position: absolute;
+  overflow: hidden;
+  width: 65%;
+  left: 33.3333333333%!important;
+  padding: 0;
+  top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 24px 0 0;
+  height: calc(100vh - 48px);
+  border-radius: 15px;
+
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1280px;
+  width: 100%;
+}
+
+
+.linkBack {
+  position: fixed;
+  top: 32px;
+  right: 48px;
+  width: 30px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 900px) {
+  .rightBox {
+    width: 100%;
+    left: 0% !important;
+    position: relative;
+  }
+}
+
+@media (max-width: 600px) {
+  .linkBack {
+    right: 20px;
+    top: 10px;
+  }
+
+  .avatar {
+      display: none;
+      width: 0;
+
+  }
+}

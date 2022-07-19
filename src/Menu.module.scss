@@ -1,0 +1,54 @@
+@import "./src/assets/sass/variables";
+
+.linkBox {
+  font-size: 30px;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  text-align: right;
+  color: #fff;
+  text-shadow: 1px 1px 1px peachpuff;
+  width: 48%;
+  height: 100%;
+;
+}
+
+
+.white {
+  color: black;
+
+}
+
+.accent {
+  color: #b4480d;
+  margin-left: 8px;
+}
+
+.link{
+  height: 30px;
+  width: 100%;
+  text-decoration: none;
+
+}
+
+.link:hover{
+  font-size: 33px;
+
+
+}
+
+@media (max-width: 600px) {
+  .linkBox {
+    width: 100%;
+    height: 35%;
+    margin-bottom: 20px;
+    border: none;
+    padding: 0;
+    font-size: 20px;
+    justify-content: space-between;
+    text-align: center;
+
+  }
+}
