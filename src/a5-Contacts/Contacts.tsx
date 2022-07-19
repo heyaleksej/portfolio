@@ -14,6 +14,7 @@ export const Contacts = () => {
 
     const hideModal = () => setModal(false)
     const showModal = () => setModal(true)
+    const Letsgo = () => true
 
     return (
         <div className={`${s.contacts} ${s.animation}`}>
