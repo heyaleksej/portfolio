@@ -2,7 +2,7 @@ import React from 'react';
 import s from './App.module.scss';
 import './App.module.scss';
 import { Menu } from './Menu';
-import { RoutesLinks } from './Routes/RoutesLinks';
+import { RoutesNavigation } from './Routes/RoutesNavigation';
 
 function App() {
   return (
@@ -13,7 +13,7 @@ function App() {
         <div className={s.rightBox}>
 
           <Menu/>
-          <RoutesLinks/>
+          <RoutesNavigation/>
 
 
         </div>

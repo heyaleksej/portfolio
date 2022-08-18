@@ -1,0 +1,29 @@
+@import "src/assets/sass/variables";
+
+.infoBox {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: hidden;
+  overflow-y: auto;
+  left: 0 !important;
+  padding: 0;
+  margin: 0;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  height: 100%;
+  background-color: $bgSecondary;
+  .infoWrapper {
+    position: relative;
+    display: flex;
+    width: 100%;
+    .infoInner {
+      display: flex;
+      flex-direction: column;
+      padding: 10px 24px;
+    }
+  }
+
+}
