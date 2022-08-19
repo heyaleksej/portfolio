@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './Skills.module.scss'
 import css from './image/css.svg'
-import git from './image/git.svg'
+import git from './image/github.svg'
 import html from './image/html.svg'
 import jest from './image/jest.svg'
 import js from './image/js.svg'
@@ -23,14 +23,16 @@ type SkillsType = {
 const skills: Array<SkillsType> = [
     {id: '2456666', skill: 'React', icon: react},
     {id: '74888', skill: 'Redux', icon: redux},
-    {id: '777', skill: 'TypeScript', icon: type},
-    {id: '643', skill: 'JavaScript', icon: js},
     {id: '1249', skill: 'REST API', icon: restA},
+    {id: '5436457', skill: 'TDD - Jest', icon: jest},
     {id: '68543', skill: 'HTML5', icon: html},
     {id: '345345', skill: 'CSS & preprocessing', icon: css},
-    {id: '5436457', skill: 'TDD - Jest', icon: jest},
     {id: '1254', skill: 'Storybook', icon: story},
     {id: '124', skill: 'Github', icon: git},
+    {id: '777', skill: 'TypeScript', icon: type},
+    {id: '643', skill: 'JavaScript', icon: js},
+
+
 ]
 
 export const Skills = () => {

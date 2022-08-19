@@ -9,16 +9,17 @@
   font-weight: 700;
   text-transform: uppercase;
   font-size: 1.15rem;
-  line-height: 110%;
+  line-height: 100%;
   margin: 0;
 }
 
 .formText {
-  font-size: 14px;
+  font-weight: 300;
   line-height: 24px;
-  margin-top: 14px;
-  width: 84%;
-  color: white;
+  margin-bottom: 40px;
+  width:100%;
+  color: #161418;
+
 }
 
 .contactBox {
@@ -36,10 +37,11 @@
 
 .formError {
   color: red;
+  padding: 5px
 }
 
 .formBtn {
-  background: #ffb400;
+  background: $accentText;
   height: 42px;
   width: 100%;
   line-height: 42px;
@@ -50,23 +52,24 @@
   text-transform: uppercase;
   cursor: pointer;
   border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
 }
 
 .formBtn:hover {
-  box-shadow: 0  1px 10px black;
 }
-
 
 /* INPUT ======================================= */
 
 .group {
   position: relative;
+  height: 50px;
   margin-bottom: 45px;
 }
 
 .input {
   font-size: 18px;
-  padding: 10px 10px 10px 5px;
+  padding: 10px 0 10px 5px;
   display: block;
   width: 100%;
   border: none;
@@ -77,8 +80,11 @@
   -webkit-text-fill-color: $secondaryText;
 }
 
+
 .inputError {
   border-bottom: 1px solid red;
+  padding: 10px 0 10px 5px;
+
 }
 
 .input:focus {
@@ -91,6 +97,7 @@
   font-size: 16px;
   position: absolute;
   pointer-events: none;
+  min-height: 80px;
   left: 5px;
   top: 10px;
   transition: 0.2s ease all;
@@ -98,94 +105,27 @@
   -webkit-transition: 0.2s ease all;
 }
 
-/* active state */
 .input:focus ~ .label, .input:valid ~ .label {
   top: -20px;
   font-size: 14px;
   color: $accentText;
 }
 
-/* BOTTOM BARS ================================= */
-.bar {
-  position: relative;
-  display: block;
-  width: 100%;
-}
 
-.bar:before, .bar:after {
-  content: '';
-  height: 2px;
-  width: 0;
-  bottom: 1px;
-  position: absolute;
-  background: $accentText;
-  transition: 0.2s ease all;
-  -moz-transition: 0.2s ease all;
-  -webkit-transition: 0.2s ease all;
-}
-
-.bar:before {
-  left: 50%;
-}
-
-.bar:after {
-  right: 50%;
-}
-
-/* active state */
-.input:focus ~ .bar:before, .input:focus ~ .bar:after {
-  width: 50%;
-}
-
-/* HIGHLIGHTER ================================== */
 .highlight {
   position: absolute;
   height: 60%;
-  width: 100px;
   top: 25%;
-  left: 0;
   pointer-events: none;
   opacity: 0.5;
 }
 
-/* active state */
+
 .input:focus ~ .highlight {
   -webkit-animation: inputHighlighter 0.3s ease;
   -moz-animation: inputHighlighter 0.3s ease;
   animation: inputHighlighter 0.3s ease;
 }
-
-/* ANIMATIONS ================ */
-@-webkit-keyframes inputHighlighter {
-  from {
-    background: $accentText;
-  }
-  to {
-    width: 0;
-    background: transparent;
-  }
-}
-
-@-moz-keyframes inputHighlighter {
-  from {
-    background: $accentText;
-  }
-  to {
-    width: 0;
-    background: transparent;
-  }
-}
-
-@keyframes inputHighlighter {
-  from {
-    background: $accentText;
-  }
-  to {
-    width: 0;
-    background: transparent;
-  }
-}
-
 
 @media (max-width: 600px) {
   .contactBox {

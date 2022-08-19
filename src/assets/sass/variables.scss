@@ -2,8 +2,25 @@ $bgFourth: #11111157;
 $bgSecondary: rgb(210, 220, 240);
 $accentText: #b4480d;
 $primaryText: #161418;
-$secondaryText: #161418;
+$secondaryText: #29272c;
 $line: #434646;
 $border: #333;
 $bgThird: #151515;
 $thirdText: #888;
+
+
+$bgColorDark: linear-gradient(54deg, rgba(37, 37, 37, 0.95) 34%, rgba(86, 86, 86, 0.95));
+$bgColorLight: linear-gradient(54deg,rgba(74,76,179,.95) 34%,hsla(0,34%,71%,.95));
+$bgColor: linear-gradient(200deg,rgba(74,76,179,.95) 34%,hsla(0,34%,71%,.95));
+$bgColorBrown: rgb(184,150,125);
+//$bgImg: url(../../../img/img_bg_main.jpg);
+
+$textColor: #29292a;
+$textSecondColor: #ffffff;
+
+$bgBarColor: #29292a;
+$bgBarColorDark: #ffffff;
+
+$itemsColor: rgb(129,196,164);
+
+$titleFontFamily: 'Wastebased', bolt;

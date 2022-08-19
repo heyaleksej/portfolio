@@ -1,0 +1,108 @@
+@import "../../../assets/sass/variables";
+@import "../../../assets/sass/mixins";
+
+.contactsBlock {
+  display: flex;
+  width: 450px;
+  flex-direction: column;
+  padding-top: 24px;
+  position: relative;
+}
+
+.contactsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.contactsContainer form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.contactsContainer input {
+  color: #ffffff;
+  outline: none;
+  width: 100%;
+  background: rgb(59, 59, 59);
+}
+
+.group {
+  position: relative;
+  margin-bottom: 45px;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+
+  -webkit-text-fill-color: #ffffff;
+  -webkit-box-shadow: 0 0 0 1000px rgb(59, 59, 59) inset;
+}
+
+.contactsContainer textarea {
+  color: #ffffff;
+}
+
+.mUIInput {
+  font-size: 18px;
+  height: 80px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid $line;
+  -webkit-box-shadow: inset 0 0 0 50px $bgSecondary;
+  color: $secondaryText;
+  -webkit-text-fill-color: $secondaryText;}
+
+.mUITextarea {
+  font-weight: 300;
+  line-height: 24px;
+  width:100%;
+  -webkit-box-shadow: inset 0 0 0 50px $bgSecondary;
+  color: $secondaryText;
+  -webkit-text-fill-color: $secondaryText;}
+
+.label {
+  color: $accentText;
+  font-size: 16px;
+  position: absolute;
+  pointer-events: none;
+  left: 5px;
+  top: 10px;
+  transition: 0.2s ease all;
+  -moz-transition: 0.2s ease all;
+  -webkit-transition: 0.2s ease all;}
+
+.terms {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button {
+  border-radius: 10px;
+  border: none;
+  background: $accentText;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: all 0.5s;
+  @include text($titleFontFamily, 14pt, uppercase, .1rem, $textSecondColor);
+}
+
+.button:hover {
+  color: #d2d0d0;
+}
+
+@media screen and (max-width: 850px) {
+  .contactsContainer form {
+    width: 80%;
+  }
+}
+

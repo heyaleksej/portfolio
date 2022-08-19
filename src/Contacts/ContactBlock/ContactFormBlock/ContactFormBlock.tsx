@@ -1,9 +1,8 @@
 import React, {FC, useState} from 'react';
 import s from './ContactFormBlock.module.scss';
-
-import {Loader} from '../../../Common/Loader/Loader';
-import { useFormik } from 'formik';
+import {useFormik} from 'formik';
 import {feedbackApi} from "../../../dal/api";
+import { Loader } from '../../../Common/Loader/Loader';
 
 type FormikErrorType = {
 	name?: string
@@ -22,8 +21,7 @@ export const ContactFormBlock: FC<ContactFormBlockPropsType> = ({setStatusResult
 	return (
 		<div className={s.contactBox}>
 			<div>
-				<h3 className={s.formTitle}>FEEL FREE TO DROP ME A LINE</h3>
-				<p className={s.formText}>If you have any suggestion, project or even you want to say Hello.. Please fill out
+				<p className={s.formText}>If you have any suggestion, project or even you want to say something.. Please fill out
 					the form below and I will
 					reply you shortly.</p>
 			</div>
@@ -50,6 +48,12 @@ export const ContactForm: FC<ContactFormPropsType> = ({setStatusResult, showModa
 		validate: (values) => {
 			const errors: FormikErrorType = {};
 
+			if (!values.name) {
+				errors.name = 'Required';
+			} else if (values.name.length > 20) {
+				errors.name = 'Must be 20 characters or less';
+			}
+
 			if (!values.email) {
 				errors.email = 'Required';
 			} else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
@@ -58,8 +62,8 @@ export const ContactForm: FC<ContactFormPropsType> = ({setStatusResult, showModa
 
 			if (!values.message) {
 				errors.message = 'Required';
-			} else if (values.message.length < 5) {
-				errors.message = 'Why so short message?';
+			} else if (values.message.length > 2000) {
+				errors.message = 'Message must be 2000 characters or less';
 			}
 
 			return errors;
@@ -71,9 +75,11 @@ export const ContactForm: FC<ContactFormPropsType> = ({setStatusResult, showModa
 			try {
 				const res = await feedbackApi.sendMessage({name, email, message})
 				if (res.data === 'ok') {
+					console.log('я тут')
 					setStatusResult(true)
 				}
-			} catch (e) {
+			}
+			catch (e) {
 				setStatusResult(false)
 				console.log(e)
 			}
@@ -89,33 +95,34 @@ export const ContactForm: FC<ContactFormPropsType> = ({setStatusResult, showModa
 			<div className={s.formBox}>
 				<div className={s.group}>
 					<input type="text" required className={s.input} {...formik.getFieldProps('name')}/>
-					<span className={s.highlight}></span>
-					<span className={s.bar}></span>
+
 					<label className={s.label}>Your Name</label>
-					{formik.errors.name && formik.touched.name ? <div className={s.formError}>{formik.errors.name}</div> : null}
+					{formik.errors.name && formik.touched.name
+						? <div className={s.formError}>{formik.errors.name}</div>
+						: null}
 				</div>
 
 				<div className={s.group}>
-					<input type="text" required className={s.input} {...formik.getFieldProps('email')}/>
-					<span className={s.highlight}></span>
-					<span className={s.bar}></span>
+					<input
+						type="text"
+						required
+						className={s.input} {...formik.getFieldProps('email')}/>
 					<label className={s.label}>Email Address</label>
-					{formik.errors.email && formik.touched.email ?
-						<div className={s.formError}>{formik.errors.email}</div> : null}
+					{formik.errors.email && formik.touched.email
+						? <div className={s.formError}>{formik.errors.email}</div>
+						: null}
 				</div>
 
 
 				<div className={s.group}>
 					<input type="text" required className={s.input} {...formik.getFieldProps('message')}/>
-					<span className={s.highlight}></span>
-					<span className={s.bar}></span>
 					<label className={s.label}>Your Message</label>
-					{formik.errors.message && formik.touched.message ?
-						<div className={s.formError}>{formik.errors.message}</div> : null}
+					{formik.errors.message && formik.touched.message
+						? <div className={s.formError}>{formik.errors.message}</div>
+						: null}
 				</div>
 
 				{status === 'loading' ? <Loader/> : null}
-
 
 				<button type="submit" className={s.formBtn} disabled={status === 'loading'}>Send Message</button>
 			</div>

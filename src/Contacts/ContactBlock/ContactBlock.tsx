@@ -5,7 +5,7 @@ import React, {FC} from 'react';
 import s from './ContactBlock.module.scss';
 import {ContactFormBlock} from './ContactFormBlock/ContactFormBlock';
 
-const contact = [
+const contacts = [
     {title: 'phone', text: '+995 595 004 283', icon: faPhoneAlt},
     {title: 'telegram', text: '@heyalexey', icon: faTelegramPlane},
     {title: 'github', text: 'Go to github', icon: faGithub},
@@ -20,15 +20,16 @@ type ContactBlockPropsType = {
 export const ContactBlock: FC<ContactBlockPropsType> = ({setStatusResult, showModal}) => {
 
 
-    const contactInfo = contact.map((el, index) => {
+    const contactInfo = contacts.map((el, index) => {
         return <li key={index} className={s.contactItem}>
             <h3 className={s.contactTitle}>{el.title}</h3>
             <span className={s.contactIcon}><FontAwesomeIcon icon={el.icon}/></span>
-            {el.text === 'Go to github' ?
-                <a className={s.contactText} target='_blank'
-                   href='https://github.com/heyaleksej'>{el.text}</a> : el.text === '@heyalexey' ?
-                    <a className={s.contactText} target='_blank' href='https://t.me/heyalexey'>{el.text}</a> :
-                    <span className={s.contactText}>{el.text}</span>
+            {el.text === 'Go to github'
+                ? <a className={s.contactText} target='_blank'
+                   href='https://github.com/heyaleksej'>{el.text}</a>
+                : el.text === '@heyalexey'
+                    ? <a className={s.contactText} target='_blank' href='https://t.me/heyalexey'>{el.text}</a>
+                    : <span className={s.contactText}>{el.text}</span>
             }
         </li>
     })

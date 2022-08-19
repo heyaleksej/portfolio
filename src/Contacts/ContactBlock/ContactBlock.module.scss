@@ -2,6 +2,7 @@
 
 .contactBox {
   display: flex;
+  margin:auto;
 }
 
 .contactList {
@@ -17,19 +18,20 @@
   margin: 18px 0;
   font-size: 20px;
   line-height: 30px;
-  font-weight: 700;
+  font-weight: 300;
   text-transform: uppercase;
 }
 
 .contactText {
   color: $secondaryText;
+  font-weight: 300;
   font-size: 16px;
   text-decoration: none;
 }
 
 .contactIcon {
-  padding-right: 10px;
-  opacity: 0.6;
+  padding-right: 20px;
+  opacity: 0.8;
 }
 
 @media (max-width: 1050px) {
