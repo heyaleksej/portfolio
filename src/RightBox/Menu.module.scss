@@ -1,4 +1,4 @@
-@import "./src/assets/sass/variables";
+@import "../assets/sass/variables";
 
 .linkBox {
   position: relative;
@@ -12,11 +12,10 @@
   padding-right: 5%;
   color: #fff;
   text-shadow: 1px 1px 1px #a2a2a2;
-  width: 45%;
+  width: 40%;
   height: 100%;
-  background: rgba(210, 220, 240, 0.8);
-  z-index: 1000;
-;
+  background: rgb(232, 235, 243, 0.8);
+  z-index: 1000
 }
 
 

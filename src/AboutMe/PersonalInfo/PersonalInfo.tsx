@@ -2,8 +2,6 @@ import s from './PersonalInfo.module.scss';
 import React from 'react';
 
 const personalInfo = [
-	{title: 'First Name: ', content: 'Alexey'},
-	{title: 'Last Name: ', content: 'Rogozhnikov'},
 	{title: 'Date of birth: ', content: '21 May 1994'},
 	{title: 'Languages: ', content: 'Intermediate (B1)'},
 	{title: 'Current location : ', content: 'Tbilisi, Georgia'},

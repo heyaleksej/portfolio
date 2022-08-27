@@ -1,18 +1,16 @@
 import React from 'react';
-import {Intro} from './Intro/Intro';
-import {NavLink} from 'react-router-dom';
-import s from './Menu.module.scss';
+import s from "../Menu.module.scss";
+import {NavLink} from "react-router-dom";
 
-export const Menu = () => {
+export const Nav = () => {
     return (
         <>
-            <Intro/>
             <div className={s.linkBox}>
                 <NavLink className={s.link} to={'/about'}>
                     <span className={s.white}>About </span>
                     <span className={s.accent}>Me</span>
                 </NavLink>
-                <NavLink className={s.link} to={'/portfolio'}>
+                <NavLink className={s.link} to={'/projects'}>
                     <span className={s.white}>My</span>
                     <span className={s.accent}>Portfolio</span>
                 </NavLink>
@@ -26,5 +24,6 @@ export const Menu = () => {
                 </NavLink>
             </div>
         </>
-    )
+    );
 }
+

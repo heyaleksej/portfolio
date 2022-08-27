@@ -1,7 +1,7 @@
 import React, {FC, useState} from 'react';
 import s from './ContactFormBlock.module.scss';
 import {useFormik} from 'formik';
-import {feedbackApi} from "../../../dal/api";
+import {feedbackApi} from "../../../DAL/api";
 import { Loader } from '../../../Common/Loader/Loader';
 
 type FormikErrorType = {
@@ -115,7 +115,7 @@ export const ContactForm: FC<ContactFormPropsType> = ({setStatusResult, showModa
 
 
 				<div className={s.group}>
-					<input type="text" required className={s.input} {...formik.getFieldProps('message')}/>
+					<textarea required className={s.input} {...formik.getFieldProps('message')}/>
 					<label className={s.label}>Your Message</label>
 					{formik.errors.message && formik.touched.message
 						? <div className={s.formError}>{formik.errors.message}</div>

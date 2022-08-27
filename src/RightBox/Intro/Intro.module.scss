@@ -1,4 +1,4 @@
-@import "./src/assets/sass/variables";
+@import "../../assets/sass/variables";
 
 .box {
   font-weight: 900;
@@ -9,10 +9,11 @@
   justify-content: center;
   color: #484646;
   text-decoration: none;
+  padding-left: 5%;
   width: 50%;
   height: 100%;
   text-shadow: 1px 1px 1px white;
-  background: rgba(210, 220, 240, 0.8);
+  background: rgb(232, 235, 243, 0.8);
 
 
   .textIntro {
@@ -41,6 +42,20 @@
   }
 }
 
+.footerBox {
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  color: #484646;
+  text-decoration: none;
+  width: 50%;
+  height: 100%;
+  text-shadow: 1px 1px 1px white;
+  background: rgba(210, 220, 240, 0.8);
+
+}
 @media (max-width: 600px) {
   .box {
     font-size: 20px;
