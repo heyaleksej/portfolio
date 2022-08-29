@@ -6,6 +6,7 @@ import {ContactBlock} from './ContactBlock/ContactBlock';
 import {Modal} from '../Common/Modal/Modal';
 import m from './ModalForm.module.scss';
 import common from './../Common/Styles/CommonStyles.module.scss'
+import xxx from "../assets/image/xxx.png";
 
 
 export const Contacts = () => {
@@ -19,26 +20,26 @@ export const Contacts = () => {
         <div className={`${common.infoBox} ${s.animation}`}>
             <div className={common.infoWrapper}>
                 <div className={`${common.infoInner} ${app.container}`}>
-                    <Title title='my' accentTitle='contacts'/>
+                    <Title title='contact' accentTitle='me'/>
                     <ContactBlock setStatusResult={setStatusResult} showModal={showModal}/>
                     <Modal active={modal}>
-                        <p className={m.close} onClick={hideModal}>&times;</p>
+                 		<img onClick={hideModal} className={m.close} src={xxx} alt={'X'}/>
                         {statusResult
                             ? <>
-                                <p className={m.modalSuccessTitle}>Ваше письмо успешно отправленно!</p>
+                                <p className={m.modalSuccessTitle}>Message was successfully sent</p>
                                 <p className={m.modalSuccessTexts}>
-                                    Я постараюсь ответить в ближайшее время
+                                    I’ll try to reply soon
                                     <span role="img" aria-label="smile">&#128578;</span>
                                 </p>
-                            </>
+                             </>
                             : <>
-                                <p className={m.modalErrorTitle}>Упс, что-то пошло не так!</p>
-                                <p className={m.modalErrorTexts}>К сожалению, Ваше письмо не отправлено.
-                                    Для связи со мной, пожалуйста, используйте telegram.</p>
-                                <p className={m.modalError}>Спасибо за понимание
+                                <p className={m.modalErrorTitle}>Ops,something wrong</p>
+                                <p className={m.modalErrorTexts}>Unfortunately, your letter has not been sent.
+                                    To contact me, please use telegram.</p>
+                                <p className={m.modalError}>Thank you for understanding
                                     <span role="img" aria-label="smile">&#128578;</span>
                                 </p>
-                            </>
+                              </>
                         }
                     </Modal>
                 </div>

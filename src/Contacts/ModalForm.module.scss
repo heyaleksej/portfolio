@@ -2,31 +2,33 @@
 
 .close {
   position: absolute;
-  right: 10px;
-  top: 0;
-  color: $primaryText;
+  right: 15px;
+  top: 15px;
   float: right;
-  font-size: 28px;
+  height: 5vh;
+  width: 5vh;
   font-weight: bold;
   margin: 0;
+  transition: 0.5s;
 }
 
 .close:hover,
 .close:focus {
-  color: $accentText;
-  text-decoration: none;
+  transform: rotate(90deg);
+  height: 5vh;
+  width: 5vh;
   cursor: pointer;
 }
 
 .modalSuccessTitle {
   text-align: center;
-  font-size: 16px;
+  font-size: 3vh;
   font-weight: 600;
   padding-bottom: 5px;
 }
 
 .modalSuccessTexts {
-  font-size: 15px;
+  font-size: 3vh;
   line-height: 25px;
   text-align: center;
 }

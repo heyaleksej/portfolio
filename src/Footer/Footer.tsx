@@ -5,6 +5,13 @@ import fcb from './../Common/img/facebook-svgrepo-com.svg'
 import tlg from './../Common/img/telegram-svgrepo-com.svg'
 import lnkdn from './../Common/img/linkedin-svgrepo-com.svg'
 import git from './../Common/img/git-fork-svgrepo-com.svg'
+import wa from './../Common/img/whatsapp-svgrepo-com.svg'
+// import inst from './../Common/img/color/instagram-svgrepo-com (1).svg'
+// import fcb from './../Common/img/color/facebook-svgrepo-com (2).svg'
+// import tlg from './../Common/img/color/telegram-svgrepo-com (3).svg'
+// import lnkdn from './../Common/img/color/linkedin-svgrepo-com (3).svg'
+// import git from './../Common/img/color/flickr-svgrepo-com.svg'
+// import wa from './../Common/img/color/whatsapp-svgrepo-com (3).svg'
 
 
 const Footer = () => {
@@ -26,15 +33,21 @@ const Footer = () => {
                             <img src={fcb} className={s.icon}/>
                  </a>
                  <a className={s.item}
+                    href={"https://wa.me/79226442144"}
+                    target="_blank">
+                            <img src={wa} className={s.icon}/>
+                 </a>
+                 <a className={s.item}
                     href={"https://www.t.me/heyalexey"}
                     target="_blank">
                             <img src={tlg} className={s.icon}/>
                  </a>
                  <a className={s.item}
-                    href={"https://github.com/heyaleksej"}
+                    href={"https://www.flickr.com/photos/hey_alexey"}
                     target="_blank">
                             <img src={git} className={s.icon}/>
                  </a>
+
 
             </span>
 };

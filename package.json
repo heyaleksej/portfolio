@@ -2,6 +2,7 @@
   "name": "new",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://heyaleksej.github.io/portfolio",
   "dependencies": {
     "@emailjs/browser": "^3.6.2",
     "@emotion/react": "^11.10.0",
@@ -28,6 +29,7 @@
     "@types/uuid": "^8.3.4",
     "axios": "^0.27.2",
     "emailjs": "^4.0.1",
+    "emailjs-com": "^3.2.0",
     "formik": "^2.2.9",
     "framer-motion": "4.1.17",
     "node-sass-import": "^2.0.1",
@@ -49,7 +51,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -68,5 +72,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }

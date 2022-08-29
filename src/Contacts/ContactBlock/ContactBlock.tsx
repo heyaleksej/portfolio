@@ -6,8 +6,8 @@ import s from './ContactBlock.module.scss';
 import {ContactFormBlock} from './ContactFormBlock/ContactFormBlock';
 
 const contacts = [
-    {title: 'phone', text: '+995 595 004 283', icon: faPhoneAlt},
-    {title: 'telegram', text: '@heyalexey', icon: faTelegramPlane},
+    {title: 'Phone', text: '+995 595 004 283', icon: faPhoneAlt},
+    {title: 'Telegram', text: '@heyalexey', icon: faTelegramPlane},
     {title: 'github', text: 'Go to github', icon: faGithub},
     {title: 'location', text: 'Tbilisi, Georgia', icon: faMapMarkedAlt},
 ]
@@ -21,7 +21,7 @@ export const ContactBlock: FC<ContactBlockPropsType> = ({setStatusResult, showMo
 
 
     const contactInfo = contacts.map((el, index) => {
-        return <li key={index} className={s.contactItem}>
+        return <li key={index}>
             <h3 className={s.contactTitle}>{el.title}</h3>
             <span className={s.contactIcon}><FontAwesomeIcon icon={el.icon}/></span>
             {el.text === 'Go to github'
