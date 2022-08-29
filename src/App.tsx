@@ -4,9 +4,11 @@ import './App.module.scss';
 import {Menu} from './RightBox/Menu';
 import {RoutesNavigation} from './Routes/RoutesNavigation';
 import {Avatar} from "./Avatar/Avatar";
+import {HashRouter} from "react-router-dom";
 
 function App() {
     return (
+        <HashRouter>
             <span className={s.wrapper}>
                  <Avatar/>
                  <div className={s.rightBox}>
@@ -14,6 +16,7 @@ function App() {
                      <RoutesNavigation/>
                  </div>
             </span>
+        </HashRouter>
     );
 }
 

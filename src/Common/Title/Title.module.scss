@@ -50,9 +50,19 @@
 }
 
 .linkBack {
-  height: 50px;
+  height: 7vh;
   left: 400px;
   top: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+
+}
+
+.linkBack:hover,
+.linkBack:focus {
+  transform: rotate(90deg);
+  height: 7vh;
+  width: 7vh;
   cursor: pointer;
 }
 

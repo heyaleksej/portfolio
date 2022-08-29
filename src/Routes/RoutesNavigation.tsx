@@ -29,7 +29,7 @@ export const RoutesNavigation = () => {
 					<Route path={PATH.CONTACTS} element={<Contacts/>}/>
 					<Route path={PATH.SKILLS} element={<Skills/>}/>
 					<Route path={PATH.PAGE404} element={<Error404/>}/>
-					<Route path="*" element={<Error404/>}/>
+					<Route path={"/*"} element={<Error404/>}/>
 				</Routes>
 	);
 }
