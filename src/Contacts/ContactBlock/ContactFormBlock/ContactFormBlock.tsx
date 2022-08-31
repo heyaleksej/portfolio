@@ -5,6 +5,7 @@ import emailjs from '@emailjs/browser'
 import {Loader} from '../../../Common/Loader/Loader';
 import mark from './../../../assets/image/exclamation-mark-svgrepo-com.svg'
 import refresh from './../../../assets/image/refresh-svgrepo-com.svg'
+import send from './../../../assets/image/send-svgrepo-com.svg'
 type FormikErrorType = {
     name?: string
     email?: string
@@ -171,9 +172,9 @@ export const ContactForm: FC<ContactFormPropsType> = ({setStatusResult, showModa
 
                 {status === 'loading' ? <Loader/> : null}
 
-                <span style={{paddingTop:'10px'}}>
+                <span className={s.btnBlock}>
                     <button className={s.refreshBtn} disabled={status === 'loading'} onClick={()=>{formik.resetForm()}}><img src={refresh} className={s.refreshLogo} alt={'refresh'}/></button>
-                    <button type={"submit"} className={s.formBtn} disabled={status === 'loading'}>Send message</button>
+                    <button type={"submit"} className={s.formBtn} disabled={status === 'loading'}>Send <img src={send} className={s.refreshLogo} alt={'send'}/></button>
                 </span>
             </div>
         </form>

@@ -5,7 +5,7 @@ import social from './projectCover/social.jpg'
 import {v1} from "uuid";
 import cardsImg from './projectCover/cards.png'
 import {Title} from "../Common/Title/Title";
-import common from './../Common/Styles/CommonStyles.module.scss'
+import common from '../assets/sass/CommonStyles.module.scss'
 import app from "../App.module.scss";
 import ostrow from "./projectCover/ostrow.png";
 

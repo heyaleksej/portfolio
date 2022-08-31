@@ -1,6 +1,6 @@
 import React from 'react'
 import s from "./Error404.module.css";
-import common from "../Styles/CommonStyles.module.scss";
+import common from "../../assets/sass/CommonStyles.module.scss";
 import animation from "../../AboutMe/AboutMe.module.scss";
 import app from "../../App.module.scss";
 import lost from './../../assets/image/404nf.gif'

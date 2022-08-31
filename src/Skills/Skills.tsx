@@ -11,7 +11,7 @@ import restA from './image/rest-api.svg'
 import type from './image/typescriptlang-icon.svg'
 import story from './image/storybook.svg'
 import {Title} from '../Common/Title/Title';
-import common from '../Common/Styles/CommonStyles.module.scss'
+import common from '../assets/sass/CommonStyles.module.scss'
 import app from "../App.module.scss";
 
 type SkillsType = {

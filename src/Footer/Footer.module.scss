@@ -1,5 +1,4 @@
-@import "./src/Common/Styles/sass/variables";
-@import "./src/Common/Styles/sass/mixins";
+@import "./src/assets/sass/variables";
 
 
 .content {
@@ -24,14 +23,15 @@
     margin: 6px;
     width: 31px;
     background: none;
-    transition: all  step-start;
+    transition: all step-start;
   }
 
   .icon:hover {
     width: 33px;
     border-radius: 50%;
     margin: 5px;
-    box-shadow: 1px 1px 20px 0 white  }
+    box-shadow: 1px 1px 20px 0 white
+  }
 
   .title {
     background-color: #f3e1e1;
@@ -57,13 +57,12 @@
       width: 66px;
       border-radius: 50%;
       margin: 10px;
-      box-shadow: 3px 3px 60px 0 white  }
+      box-shadow: 3px 3px 60px 0 white
+    }
 
   }
 }
-
-
-@media screen and (min-width: 1921px) and (max-width:3499px){
+@media screen and (min-width: 1921px) and (max-width: 3499px) {
   .content {
     .item {
       margin: 15px;
@@ -81,7 +80,24 @@
       width: 66px;
       border-radius: 50%;
       margin: 10px;
-      box-shadow: 3px 3px 60px 0 white  }
+      box-shadow: 3px 3px 60px 0 white
+    }
+  }
+}
+@media (max-width: 550px) {
+  .content {
+    width: 100%;
+    text-align: center;
+    padding-left:0;
+
+  }
+}
+@media (min-width: 551px) and (max-width: 912px){
+  .content {
+    bottom: 0;
+    width: 100%;
+    z-index: 3000;
+    padding-left: 0;
   }
 }
 

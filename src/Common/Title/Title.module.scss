@@ -70,3 +70,10 @@
     font-size: 28px;
   }
 }
+
+@media (max-width: 550px) {
+    .titleWithBtn{
+      margin-bottom: 10px;
+      padding-left: 10px;
+    }
+}

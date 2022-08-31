@@ -2,42 +2,44 @@
 
 .expBox {
   .expTitle {
-      margin: 0;
-      width: 100%;
-      font-weight: normal;
-      text-align: center;
-      color: $accentText;
-      text-transform: uppercase;
-      font-size: 24px;
-    }
-  }
-
-  .expList {
     margin: 0;
+    width: 100%;
+    font-weight: normal;
+    text-align: center;
+    color: $accentText;
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+}
 
-    .expItem {
-      padding: 0;
-      list-style: none;
-      position: relative;
-      margin: 20px 0;
+.expList {
+  margin: 0;
 
-      .expTitleCompany {
-        font-size: 14px;
-        line-height: 1.5;
-        text-decoration: none;
-        color: $primaryText;
-      }
-      .expHeading {
-        color: $accentText;
-        font-size: 14px;
-        line-height: 16.5px;
-        margin: 0 0 10px;
-      }
+  .expItem {
+    padding: 0;
+    list-style: none;
+    position: relative;
+    margin: 20px 0;
+
+    .expTitleCompany {
+      font-size: 14px;
+      line-height: 1.5;
+      text-decoration: none;
+      color: $primaryText;
     }
-    .expItem:last-child {
-      padding-right: 130px;
+
+    .expHeading {
+      color: $accentText;
+      font-size: 14px;
+      line-height: 16.5px;
+      margin: 0 0 10px;
     }
   }
+
+  .expItem:last-child {
+    padding-right: 130px;
+  }
+}
 
 
 .animation {
@@ -94,10 +96,12 @@
   .expList {
     .expItem {
       margin: 30px 0;
+
       .expTitleCompany {
         font-size: 36px;
         line-height: 1.2em;
       }
+
       .expHeading {
         color: $accentText;
         font-size: 36px;
@@ -105,13 +109,14 @@
         margin: 0 0 20px;
       }
     }
+
     .expItem:last-child {
       padding-right: 300px;
     }
   }
 }
 
-@media screen and (min-width: 2200px) and (max-width: 3499px){
+@media screen and (min-width: 2200px) and (max-width: 3499px) {
   .expBox {
     padding-top: 36px;
 
@@ -124,10 +129,12 @@
   .expList {
     .expItem {
       margin: 30px 0;
+
       .expTitleCompany {
         font-size: 24px;
         line-height: 1.5em;
       }
+
       .expHeading {
         color: $accentText;
         font-size: 24px;
@@ -135,11 +142,71 @@
         margin: 0 0 10px;
       }
     }
+
     .expItem:last-child {
       padding-right: 200px;
     }
   }
 }
+
+@media screen and (max-width: 550px) {
+  .expList {
+    .expItem {
+      .expTitleCompany {
+      }
+
+      .expHeading {
+      }
+    }
+
+    .expItem:last-child {
+      padding-right: 20px;
+    }
+  }
+}
+
+@media (min-width: 551px) and (max-width: 912px) {
+  .expBox {
+    .expTitle {
+      margin: 0;
+      width: 100%;
+      font-weight: normal;
+      text-align: center;
+      color: $accentText;
+      text-transform: uppercase;
+      font-size: 24px;
+    }
+  }
+
+  .expList {
+    .expItem {
+      padding: 0;
+      list-style: none;
+      position: relative;
+      margin: 20px 0;
+
+      .expTitleCompany {
+        font-size: 1.6vh;
+        line-height: 1.3em;
+        text-decoration: none;
+        color: $primaryText;
+      }
+
+      .expHeading {
+        color: $accentText;
+        font-size: 1.5vh;
+        line-height: 1.5em;
+        margin: 0 0 4px;
+      }
+    }
+
+    .expItem:last-child {
+      padding-right: 5px;
+    }
+  }
+
+}
+
 
 
 

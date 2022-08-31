@@ -1,4 +1,4 @@
-@import "src/assets/sass/variables";
+@import "variables";
 
 .infoBox {
   position: absolute;
@@ -35,3 +35,23 @@
     }
   }
 }
+
+@media (max-width: 550px) {
+  .infoBox {
+    .infoWrapper {
+      .infoInner {
+        padding: 5px;
+      }
+    }
+  }
+}
+@media (min-width: 551px) and (max-width: 912px) {
+  .infoBox {
+    .infoWrapper {
+      .infoInner {
+        padding: 8px;
+      }
+    }
+  }
+}
+

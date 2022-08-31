@@ -5,7 +5,7 @@ import {Title} from '../Common/Title/Title';
 import {ContactBlock} from './ContactBlock/ContactBlock';
 import {Modal} from '../Common/Modal/Modal';
 import m from './ModalForm.module.scss';
-import common from './../Common/Styles/CommonStyles.module.scss'
+import common from '../assets/sass/CommonStyles.module.scss'
 import xxx from "../assets/image/xxx.png";
 
 

@@ -79,3 +79,15 @@
     }
   }
 }
+
+@media screen and (max-width: 550px ){
+  .aboutBox {
+    .aboutWrapper {
+      .aboutInner {
+        display: flex;
+        flex-direction: column;
+        padding: 3px;
+      }
+    }
+  }
+}

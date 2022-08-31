@@ -72,9 +72,7 @@
 
 .formBtn {
   background: whitesmoke;
-  height: 42px;
-  width: 70%;
-  line-height: 42px;
+  min-width: 50%;
   font-size: 15px;
   border: none;
   color: rgba(0, 0, 0, 0.6);
@@ -90,11 +88,7 @@
 .refreshBtn {
   text-transform: uppercase;
   background: whitesmoke;
-  height: 42px;
-  width: 25%;
   border-radius: 15px;
-  margin-right: 5%;
-  line-height: 42px;
   font-size: 15px;
   border: none;
   cursor: pointer;
@@ -142,6 +136,12 @@
 
 }
 
+.btnBlock{
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+
 .input:focus {
   outline: none;
 }
@@ -167,18 +167,7 @@
 
 
 
-@media (max-width: 600px) {
-  .contactBox {
-  }
 
-  .formTitle {
-    font-size: 1rem;
-  }
-
-  .formText {
-    width: 100%;
-  }
-}
 
 @media (min-width: 3500px) {
 
@@ -201,9 +190,7 @@
   }
 
   .formBtn {
-    height: 80px;
     width: 70%;
-    line-height: 42px;
     font-size: 45px;
     border-radius: 15px;
   }
@@ -235,17 +222,14 @@
   }
 
   .refreshBtn {
-    height: 80px;
-    width: 25%;
     border-radius: 15px;
     margin-right: 5%;
-    line-height: 42px;
     font-size: 45px;
   }
 
   .refreshLogo {
-    height: 45px;
     padding: 0;
+    height: 48px;
   }
 
   .label{
@@ -310,8 +294,6 @@
   }
 
   .formBtn {
-    height: 50px;
-    line-height: 42px;
     font-size: 28px;
     border-radius: 15px;
   }
@@ -342,8 +324,6 @@
   }
 
   .refreshBtn {
-    height: 50px;
-    line-height: 42px;
     font-size: 28px;
   }
 
@@ -374,6 +354,57 @@
   .formBtn:active, .refreshBtn:active {
     transform: translateY(6px);
   }
+}
 
+@media (max-width: 550px) {
+  .formText {
+    line-height: 20px;
+    margin-bottom: 20px;
+  }
+  .contactBox {
+    padding: 0 5px 0 5px ;
+    width: unset;
+
+  }
+  .refreshBtn {
+    height: inherit;
+    font-size: 20px;
+    width: auto;
+  }
+  .formBtn {
+    font-size: 20px;
+    width: 68%;
+  }
+  .input{
+    width: 95%;
+  }
+  .refreshLogo {
+    height: 20px;
+  }
+}
+@media (min-width: 551px) and (max-width: 912px) {
+  .formText {
+    line-height: 24px;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  .contactBox {
+    padding: 0 5px 0 5px ;
+  }
+  .refreshBtn {
+    height: inherit;
+    line-height: 26px;
+    font-size: 20px;
+    width: 20%;
+  }
+  .formBtn {
+    height: inherit;
+    line-height: 26px;
+    font-size: 20px;
+    width: max-content;
+  }
+  .refreshLogo {
+    height: 20px;
+  }
 }
 

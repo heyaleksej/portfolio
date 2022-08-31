@@ -37,30 +37,6 @@
 }
 
 
-@media (max-width: 1200px) {
-
-}
-
-@media (max-width: 900px) {
-  .rightBox {
-    width: 100%;
-    left: 0% !important;
-    position: relative;
-  }
-}
-
-@media (max-width: 600px) {
-  .linkBack {
-    right: 20px;
-    top: 10px;
-  }
-  .avatar {
-      display: none;
-      width: 0;
-  }
-}
-
-
 @media (min-width: 2400px) {
   .avatar {
     width: 25.3333333333%;
@@ -77,7 +53,7 @@
   }
 }
 
-@media (min-width: 1800px) and (max-width: 2399px){
+@media (min-width: 1800px) and (max-width: 2399px) {
   .avatar {
     width: 30.3333333333%;
     height: calc(100vh - 300px);
@@ -94,14 +70,13 @@
   }
 }
 
-@media  (max-width: 1024px) {
+@media (min-width: 600px) and (max-width: 1024px) {
   .avatar {
     width: 30.3333333333%;
     height: calc(100vh - 20px);
     margin: 10px 0 10px 0;
     border: 1px solid silver;
     border-radius: 30px;
-    box-shadow: 0 0 60px rgb(0 0 0 / 50%);
   }
   .rightBox {
     width: 67.66%;
@@ -109,6 +84,34 @@
     margin: 10px 0 10px 0;
     height: calc(100vh - 20px);
     border-radius: 30px;
-    box-shadow: 0 0 60px rgb(0 0 0 / 50%);
   }
+}
+
+@media (max-width: 550px) {
+  .avatar {
+    display: none;
+  }
+  .rightBox {
+    width: 100%;
+    left: 0!important;
+    margin: 0;
+    height: 100vh;
+    border-radius: 0;
+
+
+  }
+}
+@media (min-width: 551px) and (max-width: 912px){
+  .avatar {
+    width: 40.3333333333%;
+    margin: 90px 0 30px 0;
+    height: calc(100vh - 120px);
+  }
+  .rightBox {
+    width: 64%;
+    left: 35% !important;
+    margin: 30px 0 90px 0;
+    height: calc(100vh - 120px);
+
+}
 }

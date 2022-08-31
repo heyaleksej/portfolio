@@ -25,8 +25,8 @@ export const Experience = () => {
 		<div className={s.expBox}>
 			<div className={s.expBoxTitle}>
 				<h2>
-					<span className={title.aboutTitle_white}>{'Education '}</span>
-					<span className={title.aboutTitle_yellow}>{'& Experience'}</span>
+					<span className={title.titleBlack}>{'Education '}</span>
+					<span className={title.titleRed}>{'& Experience'}</span>
 				</h2>
 			</div>
 			<ul className={s.expList}>
