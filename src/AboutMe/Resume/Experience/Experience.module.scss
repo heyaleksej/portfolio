@@ -1,8 +1,7 @@
 @import "src/assets/sass/variables";
 
 .expBox {
-
-   .expTitle {
+  .expTitle {
       margin: 0;
       width: 100%;
       font-weight: normal;
@@ -22,29 +21,18 @@
       position: relative;
       margin: 20px 0;
 
-      .expLink {
+      .expTitleCompany {
         font-size: 14px;
         line-height: 1.5;
         text-decoration: none;
         color: $primaryText;
-        cursor: pointer;
       }
-
-      .expLink:hover {
-        color: $accentText;
-        text-shadow: 1px 1px 1px white;
-
-
-      }
-
       .expHeading {
         color: $accentText;
         font-size: 14px;
         line-height: 16.5px;
         margin: 0 0 10px;
       }
-
-
     }
     .expItem:last-child {
       padding-right: 130px;
@@ -93,6 +81,65 @@
   }
 }
 
+@media screen and (min-width: 3500px) {
+  .expBox {
+    padding-top: 70px;
+
+    .expTitle {
+      font-size: 50px;
+      padding: 50px;
+
+    }
+  }
+  .expList {
+    .expItem {
+      margin: 30px 0;
+      .expTitleCompany {
+        font-size: 36px;
+        line-height: 1.2em;
+      }
+      .expHeading {
+        color: $accentText;
+        font-size: 36px;
+        line-height: 1.7em;
+        margin: 0 0 20px;
+      }
+    }
+    .expItem:last-child {
+      padding-right: 300px;
+    }
+  }
+}
+
+@media screen and (min-width: 2200px) and (max-width: 3499px){
+  .expBox {
+    padding-top: 36px;
+
+    .expTitle {
+      font-size: 28px;
+      padding: 30px;
+
+    }
+  }
+  .expList {
+    .expItem {
+      margin: 30px 0;
+      .expTitleCompany {
+        font-size: 24px;
+        line-height: 1.5em;
+      }
+      .expHeading {
+        color: $accentText;
+        font-size: 24px;
+        line-height: 1.4em;
+        margin: 0 0 10px;
+      }
+    }
+    .expItem:last-child {
+      padding-right: 200px;
+    }
+  }
+}
 
 
 

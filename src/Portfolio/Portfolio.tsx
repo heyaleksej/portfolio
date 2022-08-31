@@ -49,7 +49,7 @@ const project = projects.map(p => <div className={s.tiles} key={p.id}>
             <div className={s.details}>
                 <span className={s.title}>{p.heading}</span>
                 <span className={s.info}>
-                    <a href={p.demo} className={s.link} target="_blank">Demo</a>
+                        <a href={p.demo} className={s.link} target="_blank">Demo</a>
                 </span>
                 <span className={s.info}>
                     <a href={p.github} className={s.link} target="_blank">Github</a>
@@ -72,7 +72,6 @@ export const Portfolio = () => {
                         <div className={s.item3}>{project[2]}</div>
                         <div className={s.item4}>{project[3]}</div>
                     </div>
-
                 </div>
             </div>
         </div>

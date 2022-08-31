@@ -3,7 +3,7 @@ import {Navigate, Route, Routes} from 'react-router-dom';
 import {AboutMe} from '../AboutMe/AboutMe';
 import {Portfolio} from '../Portfolio/Portfolio';
 import {Contacts} from "../Contacts/Contacts";
-import {Skills} from "../AboutMe/Resume/Skills/Skills";
+import {Skills} from "../Skills/Skills";
 import { Error404 } from '../Common/404/Error404';
 import {AppBar} from "@mui/material";
 

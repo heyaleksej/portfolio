@@ -12,8 +12,8 @@ export const AboutMe = () => {
             <div className={s.aboutWrapper}>
                 <div className={`${s.aboutInner} ${app.container}`}>
                     <Title title='about' accentTitle='me'/>
-                    <PersonalInfo/>
-                    <Experience/>
+                        <PersonalInfo/>
+                        <Experience/>
                 </div>
             </div>
         </div>

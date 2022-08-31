@@ -6,8 +6,8 @@
 }
 
 .contactList {
-  width: 70%;
-  padding: 24px;
+  width: 60%;
+  padding: 0 24px 0 24px;
   background: $bgSecondary;
   margin: 0;
   list-style: none;
@@ -25,7 +25,7 @@
 .contactText {
   color: $secondaryText;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 14px;
   text-decoration: none;
 }
 
@@ -54,4 +54,51 @@
     width: auto;
     margin-bottom: 20px;
   }
+}
+
+@media (min-width: 3600px) {
+
+  .contactList {
+    padding: 72px;
+    width: 60%;
+  }
+
+  .contactTitle {
+    margin: 60px 0;
+    font-size: 44px;
+    line-height: 44px;
+  }
+
+  .contactText {
+    font-size: 36px;
+  }
+
+  .contactIcon {
+    padding-right: 44px;
+    font-size: 44px;
+  }
+
+}
+
+@media (min-width: 2400px) and (max-width: 3599px) {
+
+  .contactList {
+    padding: 30px;
+  }
+
+  .contactTitle {
+    margin: 30px 0;
+    font-size: 28px;
+    line-height: 28px;
+  }
+
+  .contactText {
+    font-size: 26px;
+  }
+
+  .contactIcon {
+    padding-right: 30px;
+    font-size: 30px;
+  }
+
 }

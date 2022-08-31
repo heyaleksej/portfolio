@@ -61,13 +61,72 @@
     font-size: 20px;
     width: 100%;
     height: 20%;
-
     .textIntro {
       font-size: 16px;
     }
-
     .textIntroName {
       font-size: 25px;
+    }
+  }
+}
+
+
+@media screen and (min-width: 3500px){
+
+  .box {
+    text-shadow: 3px 3px 3px white;
+    .textIntro {
+      font-size: 66px;
+    }
+    .textIntroJob {
+      font-size: 66px;
+    }
+    .textIntroName {
+      font-size: 100px;
+      margin: 60px 0;
+    }
+    .typing{
+      margin-top: 40px;
+    }
+  }
+}
+
+@media screen and (min-width: 1921px) and (max-width: 3499px){
+
+  .box {
+    text-shadow: 2px 2px 2px white;
+    .textIntro {
+      font-size: 44px;
+    }
+    .textIntroJob {
+      font-size: 44px;
+    }
+    .textIntroName {
+      font-size: 70px;
+      margin: 40px 0;
+    }
+    .typing{
+      margin-top: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: 1500px) and (max-width: 1920px){
+
+  .box {
+    text-shadow: 1px 1px 1px white;
+    .textIntro {
+      font-size: 32px;
+    }
+    .textIntroJob {
+      font-size: 32px;
+    }
+    .textIntroName {
+      font-size: 40px;
+      margin: 40px 0;
+    }
+    .typing{
+      margin-top: 30px;
     }
   }
 }

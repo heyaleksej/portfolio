@@ -3,30 +3,59 @@
 .formLoading {
   opacity: 0.6;
 }
-
-.formTitle {
-  color: $primaryText;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 1.15rem;
-  line-height: 100%;
-  margin: 0;
-}
-
 .formText {
   font-weight: 300;
   line-height: 24px;
   margin-bottom: 40px;
-  width:100%;
+  width: 100%;
   color: #161418;
+}
+.mark {
+  height: 20px;
+  color: $accentText;
+}
 
+.arrowForm {
+  display: flex;
+  align-items: flex-end;
+}
+
+.arrow {
+  width: max-content;
+  align-items: center;
+  padding: 8px;
+  position: absolute;
+  left: 35%;
+  background: rgba(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  border-radius: 10px;
+  z-index: 3000;
+  margin-top: 3px;
+}
+
+.arrow:after, .arrow:before {
+  content: "";
+  border: solid transparent;
+  position: absolute;
+  left: 8px;
+  bottom: 100%;
+}
+
+.arrow:after {
+  border-bottom-color: rgba(255, 255, 255);
+  border-width: 8px;
+  margin-left: 0;
+}
+
+.arrow:before {
+  border-width: 9px;
+  margin-left: -1px;
 }
 
 .contactBox {
   display: flex;
   flex-direction: column;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding: 0 24px 0 24px ;
   position: relative;
   width: 100%;
 }
@@ -42,34 +71,59 @@
 }
 
 .formBtn {
-  background: $accentText;
+  background: whitesmoke;
   height: 42px;
-  width: 100%;
+  width: 70%;
   line-height: 42px;
   font-size: 15px;
-  color: #fff;
   border: none;
+  color: rgba(0, 0, 0, 0.6);
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
   outline: none;
   text-transform: uppercase;
   cursor: pointer;
   border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.24) 0 3px 8px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 
 }
 
-.formBtn:hover {
+.refreshBtn {
+  text-transform: uppercase;
+  background: whitesmoke;
+  height: 42px;
+  width: 25%;
+  border-radius: 15px;
+  margin-right: 5%;
+  line-height: 42px;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.6);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3)
 }
 
-/* INPUT ======================================= */
+.refreshLogo {
+  height: 25px;
+  vertical-align: middle;
+}
+
+.formBtn:active, .refreshBtn:active {
+  transform: translateY(3px);
+}
+
+.formBtn:hover, .refreshBtn:hover {
+  box-shadow: rgba(56, 53, 53, 0.17) 0px -23px 25px 0px inset, rgba(161, 153, 153, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+}
 
 .group {
   position: relative;
-  height: 50px;
-  margin-bottom: 45px;
+  margin-bottom: 40px;
 }
 
 .input {
-  font-size: 18px;
+  font-size: 24px;
   padding: 10px 0 10px 5px;
   display: block;
   width: 100%;
@@ -92,41 +146,26 @@
   outline: none;
 }
 
-/* LABEL ======================================= */
 .label {
   color: $accentText;
   font-size: 16px;
   position: absolute;
   pointer-events: none;
-  min-height: 80px;
+  min-height: 40px;
   left: 5px;
-  top: 10px;
+  top: 30px;
   transition: 0.2s ease all;
   -moz-transition: 0.2s ease all;
   -webkit-transition: 0.2s ease all;
 }
 
-.input:focus ~ .label, .input:valid ~ .label {
+.input:focus ~ .label, .input:valid ~ .label{
   top: -20px;
-  font-size: 14px;
+  font-size: 12px;
   color: $accentText;
 }
 
 
-.highlight {
-  position: absolute;
-  height: 60%;
-  top: 25%;
-  pointer-events: none;
-  opacity: 0.5;
-}
-
-
-.input:focus ~ .highlight {
-  -webkit-animation: inputHighlighter 0.3s ease;
-  -moz-animation: inputHighlighter 0.3s ease;
-  animation: inputHighlighter 0.3s ease;
-}
 
 @media (max-width: 600px) {
   .contactBox {
@@ -140,3 +179,201 @@
     width: 100%;
   }
 }
+
+@media (min-width: 3500px) {
+
+  .formText {
+    line-height: 72px;
+    font-size: 48px;
+    margin-bottom: 80px;
+  }
+
+  .contactBox {
+    padding: 72px;
+  }
+  .mark {
+    height: 40px;
+  }
+
+  .formError {
+    padding: 25px;
+    font-size: 36px;
+  }
+
+  .formBtn {
+    height: 80px;
+    width: 70%;
+    line-height: 42px;
+    font-size: 45px;
+    border-radius: 15px;
+  }
+
+  .group {
+    height: 200px;
+    margin-bottom: 45px;
+  }
+
+  .input {
+    font-size: 48px;
+    padding: 10px 0 10px 5px;
+    width: 100%;
+  }
+
+  .inputError {
+    padding: 30px 0 30px 15px;
+  }
+
+  .input:focus ~ .label, .input:valid ~ .label {
+    top: -60px;
+    font-size: 42px;
+  }
+
+  .input:focus ~ .highlight {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+  }
+
+  .refreshBtn {
+    height: 80px;
+    width: 25%;
+    border-radius: 15px;
+    margin-right: 5%;
+    line-height: 42px;
+    font-size: 45px;
+  }
+
+  .refreshLogo {
+    height: 45px;
+    padding: 0;
+  }
+
+  .label{
+    font-size: 48px;
+  }
+
+  .input:focus ~ .label, .input:valid ~ .label{
+    top: -40px;
+    font-size: 27px;
+  }
+
+  .arrow {
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    border-radius: 10px;
+    z-index: 3000;
+    margin-top: 10px;
+    font-size: 30px;
+
+  }
+  .arrow:after, .arrow:before {
+    left: 24px;
+  }
+  .arrow:after {
+    border-width: 24px;
+    margin-left: 0;
+  }
+  .arrow:before {
+    border-width: 27px;
+    margin-left: -3px;
+  }
+
+  .formBtn:active, .refreshBtn:active {
+    transform: translateY(13px);
+  }
+
+}
+
+@media (min-width: 1921px) and (max-width: 3499px){
+
+  .formText {
+    line-height: 50px;
+    font-size: 28px;
+    margin-bottom: 40px;
+  }
+
+  .contactBox {
+    padding: 30px;
+  }
+  .mark {
+    height: 30px;
+  }
+  .label{
+    font-size: 28px;
+    top: 25px;
+
+  };
+
+  .formError {
+    padding: 20px;
+    font-size: 28px;
+  }
+
+  .formBtn {
+    height: 50px;
+    line-height: 42px;
+    font-size: 28px;
+    border-radius: 15px;
+  }
+
+  .group {
+    height: 120px;
+    margin-bottom: 30px;
+  }
+
+  .input {
+    font-size: 28px;
+    padding: 10px 0 10px 5px;
+  }
+
+  .inputError {
+    padding: 20px 0 20px 15px;
+  }
+
+  .input:focus ~ .label, .input:valid ~ .label:active {
+    top: -40px;
+    font-size: 24px;
+  }
+
+  .input:focus {
+    -webkit-animation: inputHighlighter 0.3s ease;
+    -moz-animation: inputHighlighter 0.3s ease;
+    animation: inputHighlighter 0.3s ease;
+  }
+
+  .refreshBtn {
+    height: 50px;
+    line-height: 42px;
+    font-size: 28px;
+  }
+
+  .refreshLogo {
+    height: 36px;
+    padding: 0;
+  }
+
+  .arrow {
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 18px;
+
+  }
+  .arrow:after, .arrow:before {
+    left: 12px;
+  }
+  .arrow:after {
+    border-width: 24px;
+    margin-left: 0;
+  }
+  .arrow:before {
+    border-width: 20px;
+    margin-left: -3px;
+  }
+
+  .formBtn:active, .refreshBtn:active {
+    transform: translateY(6px);
+  }
+
+}
+

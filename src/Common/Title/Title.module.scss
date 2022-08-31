@@ -1,52 +1,31 @@
 @import "./src/assets/sass/variables";
 
-.aboutTitle {
+.title {
   position: relative;
   display: flex;
   width: 100%;
   justify-content: center;
-  font-size: 30px;
-  font-weight: normal;
   text-align: center;
-  height: 40px;
+  height: 7vh;
+
 }
 
-.aboutTitle_white {
+.titleBlack {
   color: $primaryText;
   display: inline-block;
   position: relative;
+  font-size: 2.5vh;
   transition: transform 0.3s;
 }
 
-.aboutTitle_yellow {
+.titleRed {
   color: $accentText;
   display: inline-block;
   position: relative;
+  font-size: 2.5vh;
+
   transition: transform 0.3s;
   padding-left: 5px;
-}
-
-.aboutWrapperIcon {
-  overflow: inherit;
-  background: none;
-  margin: 35px 0 62px;
-  text-align: center;
-  height: 1px;
-  color: $line;
-}
-
-.outerLine {
-  display: inline-block;
-  vertical-align: middle;
-  border-bottom: 1px solid $line;
-  width: 25%;
-}
-
-
-.aboutIcon {
-  margin: 0 20px;
-  color: $accentText;
-  font-size: 20px;
 }
 
 .linkBack {
@@ -75,11 +54,19 @@
 
 
 @media (max-width: 600px) {
-  .aboutTitle {
+  .title {
     font-size: 35px;
   }
+}
 
-  .aboutWrapperIcon {
-    margin: 5px 0 40px;
+@media (min-width: 3500px) {
+  .title {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 2300px) {
+  .title {
+    font-size: 28px;
   }
 }

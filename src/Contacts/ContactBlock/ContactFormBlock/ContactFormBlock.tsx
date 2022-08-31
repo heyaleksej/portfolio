@@ -3,7 +3,8 @@ import s from './ContactFormBlock.module.scss';
 import {useFormik} from 'formik';
 import emailjs from '@emailjs/browser'
 import {Loader} from '../../../Common/Loader/Loader';
-
+import mark from './../../../assets/image/exclamation-mark-svgrepo-com.svg'
+import refresh from './../../../assets/image/refresh-svgrepo-com.svg'
 type FormikErrorType = {
     name?: string
     email?: string
@@ -39,6 +40,7 @@ type ContactFormPropsType = {
 
 export const ContactForm: FC<ContactFormPropsType> = ({setStatusResult, showModal}) => {
     const [status, setStatus] = useState('')
+
 
     const formik = useFormik({
         initialValues: {
@@ -84,38 +86,37 @@ export const ContactForm: FC<ContactFormPropsType> = ({setStatusResult, showModa
                     }
                 );
         },
-        // onSubmit: async values => {
-        // 	console.log(JSON.stringify(values));
-        // 	setStatus('loading')
-        // 	const {name, email, message} = values;
-        // 	try {
-        // 		const res = await feedbackApi.sendMessage({name, email, message})
-        // 		if (res.data === 'ok') {
-        // 			console.log('я тут')
-        // 			setStatusResult(true)
-        // 		}
-        // 	}
-        // 	catch (e) {
-        // 		setStatusResult(false)
-        // 		console.log(e)
-        // 	}
-        // 	setStatus('success')
-        // 	showModal(true)
-        // 	formik.resetForm()
-        // },
+
     });
 
 
     return (
-        <form onSubmit={formik.handleSubmit} className={status === 'loading' ? s.formLoading : ''}>
+        <form onSubmit={formik.handleSubmit}  className={status === 'loading' ? s.formLoading : ''}>
             <div className={s.formBox}>
                 <div className={s.group}>
-                    <input type="text" required className={s.input} {...formik.getFieldProps('name')}/>
+                    <input type="text"
+                           required
+                           className={s.input} {...formik.getFieldProps('name')}/>
 
                     <label className={s.label}>Your Name</label>
                     {formik.errors.name && formik.touched.name
-                        ? <div className={s.formError}>{formik.errors.name}</div>
+                        ? <div className={s.arrow}>
+                            <span className={s.arrowForm}>
+                                {formik.errors.name}
+                                <img src={mark} className={s.mark} alt={"!"}/>
+                            </span>
+                    </div>
                         : null}
+                    {/*<TextField className={s.input}*/}
+                    {/*           InputLabelProps={{className: s.label}}*/}
+                    {/*           id="custom-css-outlined-input"*/}
+                    {/*           label="Name"*/}
+                    {/*           margin="normal"*/}
+                    {/*           helperText={formik.errors.name}*/}
+                    {/*           error={!!formik.errors.name}*/}
+
+
+                    {/*           {...formik.getFieldProps('name')}/>*/}
                 </div>
 
                 <div className={s.group}>
@@ -125,22 +126,55 @@ export const ContactForm: FC<ContactFormPropsType> = ({setStatusResult, showModa
                         className={s.input} {...formik.getFieldProps('email')}/>
                     <label className={s.label}>Email Address</label>
                     {formik.errors.email && formik.touched.email
-                        ? <div className={s.formError}>{formik.errors.email}</div>
+                        ? <div className={s.arrow}>
+                            <span className={s.arrowForm}>
+                                {formik.errors.email}
+                                <img src={mark} className={s.mark} alt={"!"}/>
+                            </span>
+                        </div>
                         : null}
+                    {/*<TextField className={s.input}*/}
+                    {/*           InputLabelProps={{className: s.label}}*/}
+                    {/*           id="custom-css-outlined-input"*/}
+                    {/*           label="Email"*/}
+                    {/*           margin="normal"*/}
+                    {/*           error={!!formik.errors.email}*/}
+                    {/*           helperText={formik.errors.email}*/}
+
+                    {/*           {...formik.getFieldProps('email')}/>*/}
+
                 </div>
 
 
                 <div className={s.group}>
-                    <textarea required className={s.input} {...formik.getFieldProps('message')}/>
+                    <textarea  required className={s.input} {...formik.getFieldProps('message')}/>
                     <label className={s.label}>Your Message</label>
                     {formik.errors.message && formik.touched.message
-                        ? <div className={s.formError}>{formik.errors.message}</div>
+                        ? <div className={s.arrow}>
+                            <span className={s.arrowForm}>
+                                {formik.errors.message}
+                                <img src={mark} className={s.mark} alt={"!"}/>
+                            </span>
+
+                        </div>
                         : null}
+                    {/*<TextField className={s.input}*/}
+                    {/*           InputLabelProps={{className: s.label}}*/}
+                    {/*           id="custom-css-outlined-input"*/}
+                    {/*           label="Message"*/}
+                    {/*           margin="normal"*/}
+                    {/*           helperText={formik.errors.message}*/}
+
+                    {/*           {...formik.getFieldProps('message')}/>*/}
+
                 </div>
 
                 {status === 'loading' ? <Loader/> : null}
 
-                <button type="submit" className={s.formBtn} disabled={status === 'loading'}>Send Message</button>
+                <span style={{paddingTop:'10px'}}>
+                    <button className={s.refreshBtn} disabled={status === 'loading'} onClick={()=>{formik.resetForm()}}><img src={refresh} className={s.refreshLogo} alt={'refresh'}/></button>
+                    <button type={"submit"} className={s.formBtn} disabled={status === 'loading'}>Send message</button>
+                </span>
             </div>
         </form>
     );

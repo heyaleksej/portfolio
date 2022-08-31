@@ -9,7 +9,6 @@
   text-align: center;
   padding-left: 5%;
 
-
   .item {
     margin: 5px;
     width: 50px;
@@ -26,9 +25,6 @@
     width: 31px;
     background: none;
     transition: all  step-start;
-
-
-
   }
 
   .icon:hover {
@@ -41,6 +37,52 @@
     background-color: #f3e1e1;
   }
 
+}
+
+@media screen and (min-width: 3500px) {
+  .content {
+    .item {
+      margin: 15px;
+      width: 60px;
+      height: 60px;
+    }
+
+    .icon {
+      line-height: 66px;
+      margin: 12px;
+      width: 62px;
+    }
+
+    .icon:hover {
+      width: 66px;
+      border-radius: 50%;
+      margin: 10px;
+      box-shadow: 3px 3px 60px 0 white  }
+
+  }
+}
+
+
+@media screen and (min-width: 1921px) and (max-width:3499px){
+  .content {
+    .item {
+      margin: 15px;
+      width: 60px;
+      height: 60px;
+    }
+
+    .icon {
+      line-height: 66px;
+      margin: 12px;
+      width: 62px;
+    }
+
+    .icon:hover {
+      width: 66px;
+      border-radius: 50%;
+      margin: 10px;
+      box-shadow: 3px 3px 60px 0 white  }
+  }
 }
 
 

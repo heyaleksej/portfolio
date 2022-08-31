@@ -5,33 +5,18 @@ import title from './../../../Common/Title/Title.module.scss'
 
 
 const experience = [
-	{
-		id: '1',
-		company: 'https://it-incubator.by/React-online.html',
-		title:'IT-incubator, 2022',
-		description: 'Front-end (React/Redux/Typescript)'
-	},
-
-	{
-		id: '2',
-		company: 'https://avito.ru/',
-		title: 'Avito.ru',
-		description: 'technical support specialist / client service with 2 years experience'
-	},
-
-	{
-		id: '3',
-		company: 'https://www.spbstu.ru/university/',
-		title: 'Peter the Great St.Petersburg Polytechnic University, Institute of Physics, Nanotechnology and Telecommunications, 2017',
+	{title:'IT-incubator, 2022', description: 'Front-end (React/Redux/Typescript)'},
+	{title: 'Avito.ru', description: 'technical support specialist. Client services.  2 years experience. march`19-jan`22'},
+	{title: 'Peter the Great St.Petersburg Polytechnic University, Institute of Physics, Nanotechnology and Telecommunications, finish 2017',
 		description: 'Bachelor degree in Integral electronic'
 	},
 ]
 
 export const Experience = () => {
 
-	const experienceList = experience.map(exp => {
-		return <li key={exp.id} className={s.expItem}>
-			<a className={s.expLink}  href={exp.company}  target="_blank">{exp.title}</a>
+	const experienceList = experience.map((exp, index) => {
+		return <li key={index} className={s.expItem}>
+			<a className={s.expTitleCompany}>{exp.title}</a>
 			<p className={s.expHeading} >{exp.description}</p>
 		</li>
 

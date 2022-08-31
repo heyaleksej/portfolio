@@ -17,7 +17,6 @@
   background-color: $bgSecondary;
   .infoWrapper {
     position: relative;
-    display: flex;
     width: 100%;
     .infoInner {
       display: flex;
@@ -25,5 +24,14 @@
       padding: 10px 24px;
     }
   }
+}
 
+@media (min-width: 3600px) {
+  .infoBox {
+    .infoWrapper {
+      .infoInner {
+        padding: 30px 72px;
+      }
+    }
+  }
 }

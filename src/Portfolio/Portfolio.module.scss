@@ -1,16 +1,12 @@
 @import "./src/assets/sass/variables";
 .wrapper {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
   grid-gap: 10px;
   grid-template-areas:
-    "a a a a b b b b"
-    "a a a a b b b b"
-    "c c c c d d d d"
-    "c c c c d d d d"
-    "e e e e f f f f"
-    "e e e e f f f f";
-  align-items: start;
+    "a b"
+    "c d";
+  margin-left: auto;
+  margin-right: auto;
 }
 .item1 {
   grid-area: a;
@@ -24,34 +20,19 @@
 .item4 {
   grid-area: d;
 }
-
-
-.portfolio {
-  position: absolute;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  overflow: hidden;
-  overflow-y: auto;
-  left: 0 !important;
-  padding: 0;
-  margin: 0;
-  top: 0;
-  z-index: 1000;
-  width: 100%;
-  height: 100%;
-  background-color: $bgSecondary;
+.item5 {
+  grid-area: e;
 }
+.item6 {
+  grid-area: f;
+}
+
+
 
 .portfolioWrapper {
   position: relative;
   display: flex;
   width: 100%;
-}
-
-.projectsBlock{
-  width: 500px;
-  display: flex;
 }
 
 .portfolioInner {
@@ -64,18 +45,8 @@
   flex-wrap: wrap;
 }
 
-
-.block {
-  width: 40%;
-}
-
-
-.SpanBlock {
-  display: flex;
-}
-
 .tiles {
-  width: 300px;
+  width: 100%;
   margin-bottom: 20px;
 
   .tile {
@@ -112,10 +83,9 @@
 }
 
 .tiles .tile .details span {
-  display: block;
   opacity: 0;
   position: relative;
-  top: 100px;
+  top: 99px;
   transition-property: top, opacity;
   transition-duration: 0.3s;
   transition-delay: 0s;
@@ -132,10 +102,13 @@
 }
 
 .link {
-  margin-left: 5px;
+  margin-left: 4px;
   font-size: 15px;
   text-decoration: none;
   color: white;
+}
+
+.icon {
 }
 
 
@@ -149,7 +122,6 @@
   color: $accentText;
   transition: 0.3ms;
   text-shadow: 1px 1px 1px #ffffff;
-
 }
 
 .tiles .tile .details .info {
@@ -193,11 +165,6 @@
   transition-delay: 0.35s;
 }
 
-.projectBox {
-}
-
-
-
 .projectImage {
   border-radius: 20px;
   width: 300px;
@@ -236,7 +203,7 @@
 
 @keyframes animation {
   0% {
-    transform: rotateY(20deg) rotateX(35deg) translate(300px, -300px) skew(-35deg, 10deg);
+    transform: rotateY(20deg) rotateX(35deg) translate(600px, -600px) skew(-35deg, 10deg);
     opacity: 0;
   }
   100% {
@@ -251,5 +218,199 @@
   }
 }
 
+@media screen and (min-width: 3500px) {
+  .wrapper {
+    grid-gap: 30px;
+  }
+
+  .tiles {
+    margin-bottom: 60px;
+
+    .tile {
+      margin: 30px;
+      border-radius: 20px;
+      border: 2px solid silver;
+      box-shadow: rgba(35, 35, 42, 0.45) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;  }
+  }
+
+  .tiles .tile .details {
+    font-size: 48px;
+    padding: 40px;
+  }
+
+  .details {
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+
+  .tiles .tile .details span {
+    top: 200px;
+  }
 
 
+  .tiles .tile .details .title {
+    line-height: 2.5;
+    font-size: 75px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: white;
+    -webkit-text-stroke: 0.5px $accentText;
+  }
+
+  .link {
+    margin-left: 15px;
+    font-size: 45px;
+    text-decoration: none;
+    color: white;
+  }
+
+
+  .info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .link:hover {
+    color: $accentText;
+    transition: 0.3ms;
+    text-shadow: 1px 1px 1px #ffffff;
+  }
+
+  .tiles .tile .details .info {
+    line-height: 1.2;
+    margin-top: 15px;
+    font-size: 36px;
+    opacity: 1;
+  }
+
+  .tiles .tile:focus:before,
+  .tiles .tile:focus span,
+  .tiles .tile:hover:before,
+  .tiles .tile:hover span {
+    opacity: 1;
+  }
+
+  .tiles .tile:focus:before,
+  .tiles .tile:focus span,
+  .tiles .tile:hover:before,
+  .tiles .tile:hover .details {
+    background: rgba(36, 44, 47, 0.8);
+  }
+
+  .tiles .tile:focus:before,
+  .tiles .tile:hover:before {
+    top: 50%;
+  }
+
+  .tiles .tile:focus span,
+  .tiles .tile:hover span {
+    top: 0;
+  }
+
+  .tiles .tile:focus .title,
+  .tiles .tile:hover .title {
+    transition-delay: 0.15s;
+  }
+
+  .tiles .tile:focus .info,
+  .tiles .tile:hover .info {
+    transition-delay: 0.35s;
+  }
+
+  .projectImage {
+    border-radius: 20px;
+    width: 800px;
+    height: 500px;
+  }
+}
+
+@media screen and (min-width: 2000px) and (max-width: 3499px){
+  .wrapper {
+    grid-gap: 20px;
+  }
+
+  .tiles {
+    margin-bottom: 40px;
+
+    .tile {
+      margin: 20px;
+      border-radius: 20px;
+      box-shadow: rgba(35, 35, 42, 0.45) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;  }
+  }
+
+  .tiles .tile .details {
+    font-size: 36px;
+    padding: 30px;
+  }
+
+  .details {
+    border-bottom-left-radius: 16px;
+    border-bottom-right-radius: 16px;
+  }
+
+  .tiles .tile .details span {
+    top: 120px;
+  }
+
+
+  .tiles .tile .details .title {
+    line-height: 2.5;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+  }
+
+  .link {
+    margin-left: 15px;
+    font-size: 24px;
+  }
+
+  .tiles .tile .details .info {
+    line-height: 1.1;
+    margin-top: 10px;
+    font-size: 28px;
+    opacity: 1;
+
+  }
+
+  .tiles .tile:focus:before,
+  .tiles .tile:focus span,
+  .tiles .tile:hover:before,
+  .tiles .tile:hover span {
+    opacity: 1;
+  }
+
+  .tiles .tile:focus:before,
+  .tiles .tile:focus span,
+  .tiles .tile:hover:before,
+  .tiles .tile:hover .details {
+    background: rgba(36, 44, 47, 0.8);
+  }
+
+  .tiles .tile:focus:before,
+  .tiles .tile:hover:before {
+    top: 50%;
+  }
+
+  .tiles .tile:focus span,
+  .tiles .tile:hover span {
+    top: 0;
+  }
+
+  .tiles .tile:focus .title,
+  .tiles .tile:hover .title {
+    transition-delay: 0.15s;
+  }
+
+  .tiles .tile:focus .info,
+  .tiles .tile:hover .info {
+    transition-delay: 0.35s;
+  }
+
+  .projectImage {
+    border-radius: 20px;
+    width: 500px;
+    height: 300px;
+  }
+}

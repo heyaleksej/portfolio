@@ -1,32 +1,15 @@
 @import "src/assets/sass/variables";
 
-.contacts {
-  z-index: 1000;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  overflow-y: auto;
-  left: 0 !important;
-  padding: 0;
-  margin: 0;
-  top: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  background: $bgSecondary;
 
-  .contactsWrapper {
-    position: relative;
+.contactsWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  .contactsInner {
     display: flex;
     flex-direction: column;
-    width: 100%;
-
-    .contactsInner {
-      display: flex;
-      flex-direction: column;
-    }
-
   }
 
 }
@@ -37,8 +20,7 @@
 }
 
 @keyframes animation {
-  0% {
-    transform: rotateY(20deg) rotateX(-35deg) translate(300px, 300px) skew(35deg, -10deg);
+  0% {transform: rotateY(20deg) rotateX(-35deg) translate(300px, 300px) skew(35deg, -10deg);
     opacity: 0;
   }
   100% {
@@ -49,13 +31,9 @@
 
 @media (max-width: 600px) {
   .contacts {
-
     .contactsWrapper {
-
       .contactsInner {
       }
-
     }
-
   }
 }
