@@ -155,6 +155,29 @@
     }
   }
 }
+@media screen and (max-width: 280px){
+
+  .box {
+    .textIntro {
+      font-size: 20px;
+      font-weight: 300;
+    }
+    .textIntroJob {
+      font-size: 20px;
+      font-weight: 400;
+
+    }
+    .textIntroName {
+      font-size: 30px;
+      margin: 20px 0;
+      font-weight: 600;
+
+    }
+    .typing{
+      margin-top: 20px;
+    }
+  }
+}
 @media (min-width: 551px) and (max-width: 912px){
 
 .box{
@@ -164,3 +187,30 @@
 }
 
 }
+
+@media screen and (width: 717px) and (height: 512px) {
+
+  .box {
+    .textIntro {
+      font-size: 18px;
+      font-weight: 300;
+    }
+    .textIntroJob {
+      font-size: 20px;
+      font-weight: 400;
+
+    }
+    .textIntroName {
+      font-size: 24px;
+      margin: 20px 0;
+      font-weight: 600;
+
+    }
+    .typing{
+      margin-top: 16px;
+    }
+  }
+}
+
+
+

@@ -13,7 +13,7 @@ const contacts = [
 ]
 
 const contactInfo = contacts.map((el, index) => {
-    return <li key={index}>
+    return <li key={index} style={{paddingBottom:'15px'}}>
         <h3 className={s.contactTitle}>{el.title}</h3>
         <span className={s.contactIcon}><FontAwesomeIcon icon={el.icon}/></span>
         {el.text === 'Go to github'

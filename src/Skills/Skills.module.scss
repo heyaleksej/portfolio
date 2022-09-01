@@ -165,10 +165,41 @@
       }
     }
   }
-
+}
+@media (min-width: 1200px) and (max-width: 1920px) {
+  .skillList {
+    .skillItem {
+      .aboutIcon {
+        width: 7vh;
+        height: 7vh;
+        padding: 2vh;
+      }
+      .skillTitle {
+        font-size: 2.2vh;
+      }
+    }
+  }
 }
 
+//fold
+
+@media screen and (width: 717px) and (height: 512px) {
+  .skillList {
+    .skillItem {
+      padding:5px;
+      width: 23%;
+      min-height: 20px;
 
 
 
+      .aboutIcon {
+        width: 25px;
+        height: 25px;
+      }
+      .skillTitle {
+        font-size: 14px;
+      }
+    }
+  }
+}
 

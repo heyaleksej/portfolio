@@ -1,7 +1,6 @@
 import React from 'react';
 import s from './Experience.module.scss'
-import title from './../../../Common/Title/Title.module.scss'
-
+import t from './../../Common/Title/Title.module.scss'
 
 
 const experience = [
@@ -23,12 +22,10 @@ export const Experience = () => {
 	})
 	return (
 		<div className={s.expBox}>
-			<div className={s.expBoxTitle}>
-				<h2>
-					<span className={title.titleBlack}>{'Education '}</span>
-					<span className={title.titleRed}>{'& Experience'}</span>
-				</h2>
-			</div>
+			<h2>
+				<span className={t.titleBlack}>{'Experience'+' ' +' &'}</span>
+				<span className={t.titleRed}>{'Education'}</span>
+			</h2>
 			<ul className={s.expList}>
 				{experienceList}
 			</ul>

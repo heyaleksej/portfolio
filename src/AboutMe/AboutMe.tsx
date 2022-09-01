@@ -3,7 +3,7 @@ import s from './AboutMe.module.scss'
 import app from './../App.module.scss'
 import {PersonalInfo} from './PersonalInfo/PersonalInfo';
 import {Title} from "../Common/Title/Title";
-import {Experience} from "./Resume/Experience/Experience";
+import { Experience } from './Experience/Experience';
 
 
 export const AboutMe = () => {

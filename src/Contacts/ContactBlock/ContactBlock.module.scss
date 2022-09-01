@@ -59,7 +59,7 @@
 
 }
 
-@media (min-width: 2400px) and (max-width: 3599px) {
+@media (min-width: 1921px) and (max-width: 3599px) {
 
   .contactList {
     padding: 30px;
@@ -86,20 +86,41 @@
     display: unset;
   }
   .contactList {
-    padding: 5px;
+    padding: 0 15px;
+    width: 100%;
   }
   .contactTitle {
-    margin: 10px 0;
-    font-size: 22px;
+    margin: 5px 0;
+    font-size: 16px;
     font-weight: 100;
-    line-height: 30px;
+    line-height: 16px;
   }
   .contactText {
-    font-size: 18px;
+    font-size: 1em;
   }
   .contactIcon {
     padding-right: 20px;
-    font-size: 20px;
+    font-size: 18px;
+  }
+}
+@media (min-width: 913px) and (max-width: 1920px){
+  .contactBox {
+  }
+  .contactList {
+    padding: 0 40px;
+  }
+  .contactTitle {
+    margin: 5px 0;
+    font-size: 2.4vh;
+    font-weight: 100;
+    line-height: 3vh;
+  }
+  .contactText {
+    font-size: 2.2vh;
+  }
+  .contactIcon {
+    padding-right: 20px;
+    font-size: 30px;
   }
 }
 
@@ -107,6 +128,7 @@
 
   .contactBox {
     display: block;
+    padding: 0 5%;
   }
   .contactList {
     width: 100%;
@@ -115,14 +137,14 @@
     grid-template-areas:
     "a b"
     "c d";
-    padding: 0 0 30px 0
+    padding: 0 0 15px 0
   }
 
   .contactTitle {
     margin: 10px 0;
-    font-size: 2vh;
+    font-size: 1.8vh;
     font-weight: 100;
-    line-height: 1.6em;
+    line-height: 1em;
   }
   .contactText {
     font-size: 1.6vh;
@@ -132,4 +154,32 @@
     font-size: 18px;
   }
 }
+@media screen and (width: 717px) and (height: 512px) {
+  .contactBox {
+    display: block;
+    padding: 0 2%;
+  }
+  .contactList {
+    width: 100%;
+    display: grid;
+    grid-gap: 2px;
+    grid-template-areas:
+    "a b"
+    "c d";
+  }
+
+  .contactTitle {
+    font-size: 2.5vh;
+    font-weight: 100;
+    line-height: 1.5vh;
+  }
+  .contactText {
+    font-size: 2.5vh;
+  }
+  .contactIcon {
+    padding-right: 20px;
+    font-size: 18px;
+  }
+}
+
 

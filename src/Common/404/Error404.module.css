@@ -16,7 +16,6 @@
 
 .nf {
     display: flex;
-
     font-family: "JetBrains Mono";
     font-weight: bold;
     font-size: 9em;
@@ -40,3 +39,35 @@
     height: 70%;
     max-width: 550px;
 }
+
+@media (max-width: 550px) {
+    .box{
+        height: 100%;
+    }
+    .nf {
+        font-size: 12em;
+    }
+    .title {
+        margin-top: auto;
+        display: contents;
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (width: 717px) and (height: 512px) {
+    .box{
+        height: 100%;
+    }
+    .nf {
+        font-size: 12em;
+    }
+    .title {
+        margin-top: auto;
+        display: contents;
+        justify-content: space-evenly;
+    }
+}
+
+
+
+

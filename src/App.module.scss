@@ -115,3 +115,19 @@
 
 }
 }
+@media screen and (width: 717px) and (height: 512px) {
+  .avatar {
+    width: 30.3333333333%;
+    height: calc(100vh - 10px);
+    margin: 5px 0 5px 0;
+    border: 1px solid silver;
+    border-radius: 30px;
+  }
+  .rightBox {
+    width: 67.66%;
+    left: 31.3333333333% !important;
+    margin: 5px 0 5px 0;
+    height: calc(100vh - 10px);
+    border-radius: 30px;
+  }
+}

@@ -12,9 +12,8 @@
     .personalDesc {
       width: 100%;
       color: $secondaryText;
-      font-size: 16px;
-      line-height: 24px;
-      text-align: justify-all;
+      font-size: 1.8vh;
+      line-height: 2.4vh;
     }
 
     .personalInfoInner {
@@ -27,7 +26,7 @@
         flex-wrap: wrap;
         list-style: none;
         padding: 0;
-        height: 15vh;
+        height: max-content;
         color: $secondaryText;
         width: 100%;
 
@@ -46,16 +45,21 @@
   }
 
   .BtnWrapper {
+    display: grid;
+    justify-content: space-evenly;
+  }
+
+  .infoWrapper {
     display: flex;
-    align-items: center;
   }
 
 }
 
+
 .personalBox::after {
   position: absolute;
   content: '';
-  width: 100%;
+  width: calc(100% - 80px);
   height: 1px;
   background-color: black;
 }
@@ -73,7 +77,6 @@
 }
 
 
-
 @media screen and (min-width: 3500px) {
   .personalBox {
     padding: 0 40px 0 40px;
@@ -86,7 +89,6 @@
 
       .personalInfoInner {
         .personalInfoList {
-          height: 18vh;
           line-height: 4em;
 
           .personalInfoItem {
@@ -103,9 +105,9 @@
   }
 }
 
-@media screen and (min-width: 2300px) and (max-width: 3499px) {
+@media screen and (min-width: 1921px) and (max-width: 3499px) {
   .personalBox {
-    padding: 0 25px 0 25px;
+    padding: 0 40px 0 40px;
 
     .personalInfo {
       .personalDesc {
@@ -115,7 +117,6 @@
 
       .personalInfoInner {
         .personalInfoList {
-          height: 13vh;
           line-height: 2.7em;
 
           .personalInfoItem {
@@ -132,18 +133,140 @@
   }
 }
 
-@media screen and (max-width: 550px) {
+@media screen and (min-width: 1400px) and (max-width: 1920px) {
   .personalBox {
-    padding: 0 5px 0 5px;
+    padding: 0 40px 0 40px;
+
+    .personalInfo {
+      .personalDesc {
+        font-size: 2.2vh;
+        line-height: 2.8vh;
+      }
+
+      .personalInfoInner {
+        .personalInfoList {
+          line-height: 2.8vh;
+
+          .personalInfoItem {
+            padding-bottom: 0px;
+            font-size: 2.2vh;
+
+            .title {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
   }
-    .personalBox::after {
-    display: none;
+}
+@media screen and (min-width: 914px) and (max-width: 1399px) {
+  .personalBox {
+    padding: 0 40px 0 40px;
+
+    .personalInfo {
+      .personalDesc {
+        font-size: 2vh;
+        line-height: 2.8vh;
+      }
+
+      .personalInfoInner {
+        .personalInfoList {
+          line-height: 2.8vh;
+
+          .personalInfoItem {
+            padding-bottom: 0;
+            font-size: 2vh;
+
+            .title {
+              margin-right: 10px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
-@media (min-width: 551px) and (max-width: 912px) {
+@media screen and (min-width: 1200px){
   .personalBox {
-    padding: 0 10px 0 10px;
+    .personalInfo {
+      .personalInfoTitle {
+      }
+      .personalDesc {
+
+      }
+
+      .personalInfoInner {
+        width: 50%;
+
+        .personalInfoList {
+
+
+          .personalInfoItem {
+
+
+            .title {
+
+            }
+          }
+        }
+
+      }
+    }
+
+    .BtnWrapper {
+      display: flex;
+      align-items: center;
+      width: 50%
+    }
+
+    .infoWrapper {
+    }
+
+  }
+}
+@media screen and (min-width: 913px) and (max-width: 1199px){
+  .personalBox {
+    .personalInfo {
+      .personalInfoTitle {
+      }
+      .personalDesc {
+
+      }
+
+      .personalInfoInner {
+        width: 51%;
+
+        .personalInfoList {
+
+
+          .personalInfoItem {
+
+
+            .title {
+
+            }
+          }
+        }
+
+      }
+    }
+
+    .BtnWrapper {
+      display: flex;
+      align-items: center;
+      width: 50%
+    }
+
+    .infoWrapper {
+    }
+
+  }
+}
+@media screen and (min-width: 551px) and (max-width: 912px) {
+  .personalBox {
+    padding: 0;
 
     .personalInfo {
       .personalDesc {
@@ -155,24 +278,145 @@
         .personalInfoList {
           height: 13vh;
           line-height: 1.9em;
+          display: contents;
 
           .personalInfoItem {
             padding-bottom: 0px;
-            font-size: 18px;
+            font-size:1.45vh;
+
+            .title {
+              margin-right: 3px;
+            }
+          }
+        }
+      }
+    }
+
+    .BtnWrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 13vh;    }
+
+    .infoWrapper {
+      padding: 0 0 2vh 0;
+      align-items: center;
+    }
+
+    .personalBox::after {
+      display: none;
+
+    }
+  }
+}
+@media screen and (max-width: 550px) {
+  .personalBox {
+    padding: 0 12vw 0 5vw;
+
+    .infoWrapper {
+      display: block;
+
+      .BtnWrapper {
+        display: flex;
+        width: calc(100% - 20px);
+        justify-content: space-evenly;
+        padding-bottom: 2vh;
+      }
+    }
+  }
+  .personalBox::after {
+    display: none;
+  }
+
+
+}
+
+//fold
+@media screen and (max-width: 280px) {
+  .personalBox {
+    padding: 1vw;
+
+    .personalInfo {
+      .personalInfoTitle {
+      }
+
+      .personalDesc {
+        font-size: 1.6vh;
+        line-height: 2.2vh;
+      }
+
+      .personalInfoInner {
+        .personalInfoList {
+          .personalInfoItem {
+            padding-bottom: 8px;
+            font-size:1.6vh;
+
 
             .title {
               margin-right: 5px;
             }
           }
         }
+
       }
     }
-  }
-  .BtnWrapper {
-    justify-content: center
-  }
-  .personalBox::after {
-    display: none;
 
+
+
+    .infoWrapper {
+      .BtnWrapper {
+        width: calc(100% - 2vw);
+
+      }
+    }
+
+  }
+
+
+
+}
+@media screen and (width: 717px) and (height: 512px){
+  .personalBox {
+    padding: 0;
+
+    .personalInfo {
+      .personalDesc {
+        font-size: 13px;
+        line-height: 16px;
+      }
+
+      .personalInfoInner {
+        .personalInfoList {
+          height: 10vh;
+          display: contents;
+
+          .personalInfoItem {
+            padding-bottom: 0px;
+            font-size: 2.2vh;
+            line-height: 2.8vh;
+
+            .title {
+              margin-right: 3px;
+            }
+          }
+        }
+      }
+    }
+
+    .BtnWrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      height: 13vh;    }
+
+    .infoWrapper {
+      padding: 0 0 2vh 0;
+      align-items: center;
+    }
+
+    .personalBox::after {
+      display: none;
+
+    }
   }
 }
