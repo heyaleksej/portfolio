@@ -211,6 +211,30 @@
     }
   }
 }
+@media screen and (min-width: 666px) and (max-width: 944px) and (min-height: 350px) and (max-height: 415px) {
+  .box {
+    width: 50%;
+    height: 100%;
+    .textIntro {
+      font-size: 16px;
+      font-weight: 300;
+    }
+    .textIntroJob {
+      font-size: 18px;
+      font-weight: 400;
+
+    }
+    .textIntroName {
+      font-size: 20px;
+      margin: 20px 0;
+      font-weight: 600;
+
+    }
+    .typing{
+      margin-top: 14px;
+    }
+  }
+}
 
 
 

@@ -91,3 +91,15 @@
     }
   }
 }
+
+@media screen and (min-width: 700px) and (max-width: 944px) and (min-height: 350px) and (max-height: 415px) {
+  .aboutBox {
+    .aboutWrapper {
+      .aboutInner {
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px 0 5px;
+      }
+    }
+  }
+}

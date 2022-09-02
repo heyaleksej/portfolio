@@ -55,6 +55,7 @@
     }
   }
 }
+
 @media screen and (min-width: 1921px) and (max-width: 3499px) {
   .linkBox {
     font-size: 44px;
@@ -69,6 +70,7 @@
     }
   }
 }
+
 @media screen and (min-width: 1600px) and (max-width: 1920px) {
   .linkBox {
     font-size: 32px;
@@ -83,6 +85,7 @@
     }
   }
 }
+
 @media (max-width: 550px) {
   .linkBox {
     position: initial;
@@ -93,20 +96,25 @@
     align-items: unset;
     text-align: inherit;
     justify-content: flex-start;
-    padding-top:10%;
+    padding-top: 10%;
 
     .link {
-      height: 40px;
+      height: 30px;
       padding-bottom: 50px;
       padding-left: 10px;
       font-weight: 300;
+      transition: none;
+      width: max-content;
+
     }
+
     .link:hover {
-      font-size: 44px;
+      height: 30px;
     }
   }
 }
-@media (min-width: 551px) and (max-width: 912px){
+
+@media (min-width: 551px) and (max-width: 912px) {
   .linkBox {
     position: unset;
     flex-direction: column;
@@ -118,14 +126,38 @@
     padding-bottom: 20%;
   }
 }
+
 //fold
-@media screen and (width: 717px) and (height: 512px) {
+@media screen and (min-width: 717px) and (max-width: 736px) and (min-height: 414px) and (max-height: 512px) {
   .linkBox {
+  }
+  .link {
+    font-size: 20px;
+    padding-bottom: 7%;
+  }
+}
+// horizontal mobile
+@media screen and (min-width: 666px) and (max-width: 944px) and (min-height: 350px) and (max-height: 415px) {
+  .linkBox {
+    width: 50%;
+    height: 100%;
+    padding: 0;
+    justify-content: space-evenly;
+    align-items: end;
 
   }
   .link {
-font-size: 20px;
+    font-size: 16px;
+    height: 18px;
     padding-bottom: 7%;
+    transition: none;
+    width: max-content;
+
+  }
+
+  .link:hover {
+    font-size: 16px;
+    height: 18px;
   }
 }
 

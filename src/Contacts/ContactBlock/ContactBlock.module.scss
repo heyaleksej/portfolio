@@ -183,3 +183,28 @@
 }
 
 
+@media screen and (min-width: 666px) and (max-width: 944px) and (min-height: 350px) and (max-height: 415px) {
+  .contactBox {
+    display: flex;
+  }
+  .contactList {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: space-between;
+    padding: 0;
+    height:100%
+  }
+  .contactTitle {
+    margin: 5px 0;
+    font-size: 3.2vh;
+    line-height: 3.4vh;
+  }
+  .contactText {
+    font-size: 2.6vh;
+  }
+  .contactIcon {
+    padding-right: 10px;
+    font-size: 14px;
+  }
+}

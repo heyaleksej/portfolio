@@ -131,3 +131,19 @@
     border-radius: 30px;
   }
 }
+@media screen and (min-width: 666px) and (max-width: 944px) and (min-height: 350px) and (max-height: 415px) {
+  .avatar {
+    width: 30.3333333333%;
+    height: calc(100vh - 6px);
+    margin: 3px 0 3px 0;
+    border: 1px solid silver;
+    border-radius: 10px;
+  }
+  .rightBox {
+    width: 67.66%;
+    left: 31.3333333333% !important;
+    margin: 3px 0 3px 0;
+    height: calc(100vh - 6px);
+    border-radius: 10px;
+  }
+}

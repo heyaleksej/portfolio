@@ -1,9 +1,9 @@
 import s from './PersonalInfo.module.scss';
 import React from 'react';
-import {NavLink, useNavigate} from "react-router-dom";
-import {faMobileButton} from "@fortawesome/free-solid-svg-icons";
-import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {NavLink} from "react-router-dom";
 import {ButtonX} from '../../Common/Button/ButtonX';
+// @ts-ignore
+import Cv from './cv/cv.pdf'
 
 const personalInfo = [
     {title: 'Date of birth: ', content: '21 May 1994'},
@@ -42,8 +42,12 @@ export const PersonalInfo = () => {
 				       	<ButtonX name= {'Contact Me'} type={"button"} onClick={() => {
                         }}/>
                     </NavLink>
-					<ButtonX name={'Download CV'} type={"button"} onClick={() => {
-                    }}/>
+					<a style={{textDecoration: "none"}}
+                       href={Cv}
+                       target={"_blank"}
+                       rel="noreferrer">
+                        <ButtonX name={'Download CV'} type={"button"}/>
+                    </a>
 				</span></span>
             </div>
         </div>
