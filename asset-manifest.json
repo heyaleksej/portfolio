@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.c0cdfed4.css",
-    "main.js": "/portfolio/static/js/main.dbc0db9f.js",
+    "main.css": "/portfolio/static/css/main.a93d47be.css",
+    "main.js": "/portfolio/static/js/main.b0da00f3.js",
     "static/js/651.5dfea029.chunk.js": "/portfolio/static/js/651.5dfea029.chunk.js",
     "static/media/cards.png": "/portfolio/static/media/cards.5770564a5dee15cee920.png",
     "static/media/404nf.gif": "/portfolio/static/media/404nf.6cb9e34f253d27e7db72.gif",
+    "static/media/cv.pdf": "/portfolio/static/media/cv.6b16c35e0d73820d947d.pdf",
     "static/media/ostrow.png": "/portfolio/static/media/ostrow.aafcff8a89c4a808e8a5.png",
     "static/media/stock-flowers.jpeg": "/portfolio/static/media/stock-flowers.6d2a9dca951e611918cc.jpeg",
     "static/media/ava.jpg": "/portfolio/static/media/ava.df87478d8deba35099b1.jpg",
@@ -30,12 +31,12 @@
     "index.html": "/portfolio/index.html",
     "static/media/html.svg": "/portfolio/static/media/html.b0c3e0d6617bc364b4ca4ea99a8b70f4.svg",
     "static/media/css.svg": "/portfolio/static/media/css.273e3ffabd7f899a47c83bb2921855f2.svg",
-    "main.c0cdfed4.css.map": "/portfolio/static/css/main.c0cdfed4.css.map",
-    "main.dbc0db9f.js.map": "/portfolio/static/js/main.dbc0db9f.js.map",
+    "main.a93d47be.css.map": "/portfolio/static/css/main.a93d47be.css.map",
+    "main.b0da00f3.js.map": "/portfolio/static/js/main.b0da00f3.js.map",
     "651.5dfea029.chunk.js.map": "/portfolio/static/js/651.5dfea029.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c0cdfed4.css",
-    "static/js/main.dbc0db9f.js"
+    "static/css/main.a93d47be.css",
+    "static/js/main.b0da00f3.js"
   ]
 }
