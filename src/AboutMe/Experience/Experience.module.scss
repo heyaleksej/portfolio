@@ -164,7 +164,7 @@
     }
   }
 }
-@media screen and (min-width: 913px) and (max-width: 1399px) {
+@media screen and (min-width: 913px) and (max-width: 1399px) and (min-height: 568px)  {
   .expBox {
     padding-top: 30px;
     .expList {
@@ -278,7 +278,7 @@
   }
 }
 
-@media screen and (min-width: 550px) and (max-width: 960px) and (min-height: 270px) and (max-height: 640px)  {
+@media screen and (min-width: 550px) and (max-width: 960px) and (min-height: 270px) and (max-height: 567px)  {
   .expBox {
     padding-top: 5px;
 
@@ -291,8 +291,8 @@
 
         .expTitleCompany {
           text-decoration: none;
-          font-size: 2.4vh;
-          line-height: 3.6vh
+          font-size: 2.2vh;
+          line-height: 3.2vh
         }
 
         .expHeading {
