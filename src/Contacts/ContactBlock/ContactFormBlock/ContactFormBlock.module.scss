@@ -429,20 +429,24 @@
   }
 }
 //horizontal mobile
-@media screen and (min-width: 666px) and (max-width: 944px) and (min-height: 350px) and (max-height: 415px) {
+@media screen and (min-width: 550px) and (max-width: 960px) and (min-height: 270px) and (max-height: 640px)  {
   .formText {
     line-height: 4vh;
     margin-bottom: 10px;
     font-size: 3vh;
   }
   .label{
-    font-size: 12px;
-    top: 10px;
+    font-size: 3vh;
+    top: 2.2vh;
 
   }
   .input {
-    font-size: 14px;
+    font-size: 4vh;
     padding: 3px 0 3px 2px;
+  }
+
+  .group{
+    margin-bottom: 10vh;
   }
   .btnBlock {
     padding-top: 0;
@@ -453,14 +457,14 @@
     color: $accentText;
   }
   .arrowForm {
-    font-size: 10px;
+    font-size: 2.6vh;
     display: flex;
     align-items: flex-end;
   }
 
 
   .input:focus ~ .label, .input:valid ~ .label {
-    top: -5px;
+    top: -3vh;
     font-size: 8px;
   }
 }
