@@ -71,7 +71,7 @@
   }
 }
 
-@media (max-width: 550px) {
+@media screen and (max-width: 550px ) and (min-height: 641px){
   .titleWithBtn {
     margin-bottom: 10px;
     padding-left: 10px;
