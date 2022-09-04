@@ -142,7 +142,7 @@
     }
   }
 }
-@media screen and (min-width: 914px) and (max-width: 1399px) and (min-height: 568px) {
+@media screen and (min-width: 914px) and (max-width: 1399px) {
   .personalBox {
     padding: 0 40px 0 40px;
 
@@ -364,18 +364,18 @@
 
     .personalInfo {
       .personalDesc {
-        font-size: 2.2vh;
-        line-height: 3.2vh;
+        font-size: 8px;
+        line-height: 12px;
       }
 
       .personalInfoInner {
         width: 50%;
         .personalInfoList {
-          line-height: 4vh;
+          line-height: 12px;
 
           .personalInfoItem {
             padding-bottom: 0px;
-            font-size: 2.2vh;
+            font-size: 8px;
 
             .title {
               margin-right: 10px;

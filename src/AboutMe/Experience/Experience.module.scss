@@ -291,18 +291,17 @@
 
         .expTitleCompany {
           text-decoration: none;
-          font-size: 2.2vh;
-          line-height: 3.2vh
+          font-size: 8px;
+          line-height: 12px;
         }
 
         .expHeading {
-          font-size: 2.2vh;
-          line-height: 2.6vh;
+          font-size: 8px;
+          line-height: 12px;
         }
       }
-
       .expItem:last-child {
-        padding-right: 40px;
+        padding-right: 20px;
       }
     }
   }
