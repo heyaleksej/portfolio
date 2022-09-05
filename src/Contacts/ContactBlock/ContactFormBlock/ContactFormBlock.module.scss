@@ -5,13 +5,14 @@
 }
 .formText {
   font-weight: 300;
-  line-height: 24px;
-  margin-bottom: 40px;
+  line-height: 3vh;
+  margin-bottom: 5vh;
+  font-size: 2.2vh;
   width: 100%;
   color: #161418;
 }
 .mark {
-  height: 20px;
+  height: 2.8vh;
   color: $accentText;
 }
 .arrowForm {
@@ -22,7 +23,7 @@
 .arrow {
   width: max-content;
   align-items: center;
-  padding: 8px;
+  padding: 1.4vh;
   position: absolute;
   left: 35%;
   background: rgba(255, 255, 255);
@@ -64,62 +65,23 @@
   flex-direction: column;
 }
 
-.formBtn {
-  background: whitesmoke;
-  min-width: 50%;
-  font-size: 15px;
-  border: none;
-  color: rgba(0, 0, 0, 0.6);
-  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3);
-  outline: none;
-  padding: 15px;
-  height: 4%;
-  text-transform: uppercase;
-  cursor: pointer;
-  border-radius: 15px;
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-
-}
-
-
-.refreshBtn {
-  text-transform: uppercase;
-  background: whitesmoke;
-  border-radius: 15px;
-  font-size: 15px;
-  padding: 15px;
-  height: 4%;
-  border: none;
-  cursor: pointer;
-  color: rgba(0, 0, 0, 0.6);
-  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-  text-shadow: 2px 8px 6px rgba(0, 0, 0, 0.2), 0px -5px 35px rgba(255, 255, 255, 0.3)
-}
-
 .refreshLogo {
-  height: 25px;
+  height: 3vh;
   vertical-align: middle;
-}
-
-.formBtn:active, .refreshBtn:active {
-  transform: translateY(3px);
-}
-
-.formBtn:hover, .refreshBtn:hover {
-  box-shadow: rgba(56, 53, 53, 0.17) 0px -23px 25px 0px inset, rgba(161, 153, 153, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
-
 }
 
 .group {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 4vh;
 }
 
 .input {
-  font-size: 24px;
+  font-size: 2.4vh;
   padding: 10px 0 10px 5px;
   display: block;
   width: 100%;
+  height: 4vh;
+  line-height:2.8vh;
   border: none;
   border-bottom: 1px solid $line;
   background-color: $bgSecondary;
@@ -131,7 +93,7 @@
 .btnBlock {
   display: flex;
   justify-content: center;
-  padding-top: 10px;
+  padding-top: 2vh;
 }
 
 .input:focus {
@@ -140,227 +102,36 @@
 
 .label {
   color: $accentText;
-  font-size: 16px;
+  font-size: 2.2vh;
   position: absolute;
   pointer-events: none;
-  min-height: 40px;
-  left: 5px;
-  top: 30px;
+  left: 1vw;
+  top: 3.6vh;
   transition: 0.2s ease all;
   -moz-transition: 0.2s ease all;
   -webkit-transition: 0.2s ease all;
 }
 
 .input:focus ~ .label, .input:valid ~ .label {
-  top: -20px;
-  font-size: 12px;
+  top: -2.4vh;
+  font-size: 1.8vh;
   color: $accentText;
 
 
 }
 
-
-@media (min-width: 3500px) {
-
-  .formText {
-    line-height: 72px;
-    font-size: 48px;
-    margin-bottom: 80px;
-  }
-
-  .contactBox {
-    padding: 72px;
-  }
-  .mark {
-    height: 40px;
-  }
-
-  .formError {
-    padding: 25px;
-    font-size: 36px;
-  }
-
-  .formBtn {
-    width: 70%;
-    font-size: 45px;
-    border-radius: 15px;
-  }
-
-  .group {
-    height: 200px;
-    margin-bottom: 45px;
-  }
-
-  .input {
-    font-size: 48px;
-    padding: 10px 0 10px 5px;
-    width: 100%;
-  }
-
-  .inputError {
-    padding: 30px 0 30px 15px;
-  }
-
-  .input:focus ~ .label, .input:valid ~ .label {
-    top: -60px;
-    font-size: 42px;
-  }
-
-  .input:focus ~ .highlight {
-    -webkit-animation: inputHighlighter 0.3s ease;
-    -moz-animation: inputHighlighter 0.3s ease;
-    animation: inputHighlighter 0.3s ease;
-  }
-
-  .refreshBtn {
-    border-radius: 15px;
-    margin-right: 5%;
-    font-size: 45px;
-  }
-
-  .refreshLogo {
-    padding: 0;
-    height: 48px;
-  }
+@media screen and (min-width: 1920px){
 
   .label {
-    font-size: 48px;
-  }
-
-  .input:focus ~ .label, .input:valid ~ .label {
-    top: -40px;
-    font-size: 27px;
-  }
-
-  .arrow {
-    padding: 30px;
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
-    border-radius: 10px;
-    z-index: 3000;
-    margin-top: 10px;
-    font-size: 30px;
-
-  }
-  .arrow:after, .arrow:before {
-    left: 24px;
-  }
-  .arrow:after {
-    border-width: 24px;
-    margin-left: 0;
-  }
-  .arrow:before {
-    border-width: 27px;
-    margin-left: -3px;
-  }
-
-  .formBtn:active, .refreshBtn:active {
-    transform: translateY(13px);
-  }
-
-}
-
-@media (min-width: 1921px) and (max-width: 3499px) {
-
-  .formText {
-    line-height: 50px;
-    font-size: 28px;
-    margin-bottom: 40px;
-  }
-
-  .contactBox {
-    padding: 30px;
-  }
-  .mark {
-    height: 30px;
-  }
-  .label {
-    font-size: 28px;
-    top: 25px;
-
-  }
-;
-
-  .formError {
-    padding: 20px;
-    font-size: 28px;
-  }
-
-  .formBtn {
-    font-size: 28px;
-    border-radius: 15px;
-  }
-
-  .group {
-    height: 120px;
-    margin-bottom: 30px;
-  }
-
-  .input {
-    font-size: 28px;
-    padding: 10px 0 10px 5px;
-  }
-
-  .inputError {
-    padding: 20px 0 20px 15px;
-  }
-
-  .input:focus ~ .label, .input:valid ~ .label:active {
-    top: -40px;
-    font-size: 24px;
-  }
-
-  .input:focus {
-    -webkit-animation: inputHighlighter 0.3s ease;
-    -moz-animation: inputHighlighter 0.3s ease;
-    animation: inputHighlighter 0.3s ease;
-  }
-
-  .refreshBtn {
-    font-size: 28px;
-  }
-
-  .refreshLogo {
-    height: 36px;
-    padding: 0;
-  }
-
-  .arrow {
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 10px;
-    font-size: 18px;
-
-  }
-  .arrow:after, .arrow:before {
-    left: 12px;
-  }
-  .arrow:after {
-    border-width: 24px;
-    margin-left: 0;
-  }
-  .arrow:before {
-    border-width: 20px;
-    margin-left: -3px;
-  }
-
-  .formBtn:active, .refreshBtn:active {
-    transform: translateY(6px);
-  }
-}
-@media screen and (min-width: 913px) and (max-width: 1920px) {
-  .formText {
-    line-height: 3.3vh;
-    margin-bottom: 20px;
     font-size: 2.2vh;
-  }
-  .contactBox {
-    padding: 0 5px 0 5px;
-  }
-  .refreshLogo {
-    height: 30px;
+    left: 1vw;
+    top: 2.8vh;
   }
 }
-@media (min-width: 551px) and (max-width: 912px) {
+
+
+//ipad vert
+@media screen and (min-width: 551px) and (max-width: 912px) and (min-height: 768px) {
   .formText {
     line-height: 24px;
     margin-bottom: 20px;
@@ -373,7 +144,8 @@
     height: 20px;
   }
 }
-@media (max-width: 550px) {
+//mobile
+@media screen and (max-width: 550px) and (min-height: 567px){
 
   .formBox {
     padding-top: 20px
@@ -388,6 +160,7 @@
   }
   .btnBlock {
     padding-top: 0;
+    padding-bottom: 30px
   }
   .group {
     margin-bottom: 25px;

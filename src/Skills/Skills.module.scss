@@ -18,15 +18,16 @@
 
 
     .aboutIcon {
-      width: 50px;
-      height: 50px;
+      width: 7vh;
+      height: 7vh;
+      padding: 2vh;
     }
 
     .skillTitle {
       min-width: inherit;
       text-align: center;
       font-weight: 300;
-      font-size: 16px;
+      font-size: 2.2vh;
       word-wrap: break-word;
       color: #161418;
     }
@@ -48,141 +49,44 @@
   }
 }
 
-@media (max-width: 900px) {
-
-  .skillBox {
-
-    .skillHeadingBox {
-      .skillHeading {
-      }
-    }
-
-    .skillList {
-      .skillItem {
-
-        .aboutIcon {
-          font-size: 20px;
-        }
-
-        .skillTitle {
-          font-size: 16px;
-          line-height: 25px;
-        }
-      }
-    }
-  }
-}
-
-
-@media (max-width: 600px) {
-
-  .skillBox {
-
-    .skillHeadingBox {
-      .skillHeading {
-      }
-    }
-
-    .skillList {
-      .skillItem {
-        width: 48%;
-        min-height: 100px;
-
-        .aboutIcon {
-          font-size: 20px;
-        }
-
-        .skillTitle {
-          font-size: 14px;
-          line-height: 25px;
-        }
-      }
-    }
-  }
-}
-
-@media (min-width: 3500px) {
+//mobile
+@media screen and (max-width: 550px) and (min-height: 568px){
 
   .skillList {
+    justify-content: space-between;
+    padding: 15px;
     .skillItem {
-      min-height:300px;
+      min-height:80px;
+      padding: 10px;
       .aboutIcon {
-        width: 150px;
-        height: 150px;
+        width: 40px;
+        height: 40px;
       }
       .skillTitle {
-        font-size: 48px;
+        font-size: 3.5vw;
       }
     }
   }
 }
-
-@media (min-width: 2200px) and (max-width: 3499px){
-
-  .skillList {
-    .skillItem {
-      min-height:250px;
-      .aboutIcon {
-        width: 80px;
-        height: 80px;
-      }
-      .skillTitle {
-        font-size: 28px;
-      }
-    }
-  }
-}
-
-@media (max-width: 550px){
-
-  .skillList {
-    justify-content: center;
-    .skillItem {
-      min-height:90px;
-      padding: 20px 30px 20px 30px;
-      .aboutIcon {
-        width: 60px;
-        height: 60px;
-      }
-      .skillTitle {
-        font-size: 14px;
-      }
-    }
-  }
-}
+//ipad
 @media (min-width: 551px) and (max-width: 912px) {
   .skillList {
-    justify-content: center;
+    justify-content: space-between;
+    padding: 15px;
     .skillItem {
-      min-height:100px;
-      padding: 10px 30px 20px 30px;
+      min-height:80px;
+      padding: 5px;
       .aboutIcon {
-        width: 70px;
-        height: 70px;
+        width: 50px;
+        height: 50px;
       }
       .skillTitle {
-        font-size: 18px;
+        font-size: 2.4vw;
       }
     }
   }
 }
-@media (min-width: 1200px) and (max-width: 1920px) {
-  .skillList {
-    .skillItem {
-      .aboutIcon {
-        width: 7vh;
-        height: 7vh;
-        padding: 2vh;
-      }
-      .skillTitle {
-        font-size: 2.2vh;
-      }
-    }
-  }
-}
-
 //fold
-
 @media screen and (width: 717px) and (height: 512px) {
   .skillList {
     .skillItem {
@@ -202,8 +106,6 @@
 //horizontal mobile
 @media screen and (min-width: 550px) and (max-width: 960px) and (min-height: 270px) and (max-height: 640px) {
   .skillList {
-    justify-content: flex-start;
-    align-items: flex-start;
     .skillItem {
       padding:5px;
       width: 23%;

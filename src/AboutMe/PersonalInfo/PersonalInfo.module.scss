@@ -33,6 +33,8 @@
         .personalInfoItem {
           display: flex;
           padding-bottom: 10px;
+          font-size: 1.8vh;
+
 
           .title {
             margin-right: 8px;
@@ -131,7 +133,7 @@
 
           .personalInfoItem {
             padding-bottom: 0px;
-            font-size: 2.2vh;
+            font-size: 2vh;
 
             .title {
               margin-right: 10px;
@@ -160,7 +162,6 @@
 
           .personalInfoItem {
             padding-bottom: 0;
-            font-size: 2.2vh;
 
             .title {
               margin-right: 10px;
