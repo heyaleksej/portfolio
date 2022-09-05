@@ -1,38 +1,31 @@
 @import "../../assets/sass/variables";
 
 .expBox {
-
-
   .expList {
     margin: 0;
     font-weight: 100;
     font-size: 1.8vh;
-
-
+    padding: 0 2vw 0 2vw;
     .expItem {
       padding: 0;
       list-style: none;
       position: relative;
-      margin: 20px 0;
-
-
+      margin: 1.5vw 0;
       .expTitleCompany {
         text-decoration: none;
         color: $primaryText;
         font-size: 1.8vh;
         line-height: 2.4vh;
       }
-
       .expHeading {
         font-size: 1.8vh;
         line-height: 2.4vh;
         color: $accentText;
-        margin: 0 0 10px;
+        margin: 0 0 1vh 0;
       }
     }
-
     .expItem:last-child {
-      padding-right: 130px;
+      padding-right: 5vw;
     }
   }
 }
@@ -79,89 +72,6 @@
   }
 }
 
-@media screen and (min-width: 3500px) {
-  .expBox {
-    padding-top: 70px;
-  }
-  .expList {
-    .expItem {
-      margin: 30px 0;
-
-      .expTitleCompany {
-      }
-
-      .expHeading {
-        color: $accentText;
-        line-height: 1.7em;
-        margin: 0 0 20px;
-      }
-    }
-
-    .expItem:last-child {
-      padding-right: 300px;
-    }
-  }
-}
-
-@media screen and (min-width: 1921px) and (max-width: 3499px) {
-  .expBox {
-    padding-top: 36px;
-
-
-    .expList {
-      .expItem {
-        margin: 30px 0;
-
-        .expTitleCompany {
-          font-size: 24px;
-          line-height: 1.5em;
-        }
-
-        .expHeading {
-          color: $accentText;
-          font-size: 24px;
-          line-height: 1.4em;
-          margin: 0 0 10px;
-        }
-      }
-
-      .expItem:last-child {
-        padding-right: 200px;
-      }
-    }
-  }
-}
-@media screen and (min-width: 1400px) and (max-width: 1920px) {
-  .expBox {
-    padding-top: 36px;
-
-
-    .expList {
-      padding-inline-start: 40px;
-
-      .expItem {
-        margin: 25px 0;
-
-        .expTitleCompany {
-          text-decoration: none;
-          color: $textColor;
-          font-size: 2.2vh;
-          line-height: 2.8vh
-        }
-
-        .expHeading {
-          color: $accentText;
-          font-size: 2.2vh;
-          line-height: 2.2vh;
-        }
-      }
-
-      .expItem:last-child {
-        padding-right: 40px;
-      }
-    }
-  }
-}
 @media screen and (min-width: 913px) and (max-width: 1399px) and (min-height: 568px)  {
   .expBox {
     padding-top: 30px;
@@ -215,7 +125,7 @@
   }
 }
 
-@media screen and (min-width: 551px) and (max-width: 912px) and (min-height: 700px){
+@media screen and (min-width: 551px) and (max-width: 912px) and (min-height: 768px){
   .expBox {
 
     .expList {
@@ -285,17 +195,17 @@
       padding-inline-start: 10px;
 
       .expItem {
-        margin: 15px 0;
+        margin: 1vw 0;
 
         .expTitleCompany {
           text-decoration: none;
-          font-size: 8px;
-          line-height: 12px;
+          font-size: 1.2vw;
+          line-height: 1.8vw;
         }
 
         .expHeading {
-          font-size: 8px;
-          line-height: 12px;
+          font-size: 1.2vw;
+          line-height: 1.4vw;
         }
       }
       .expItem:last-child {
