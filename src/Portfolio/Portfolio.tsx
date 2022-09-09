@@ -8,14 +8,15 @@ import {Title} from "../Common/Title/Title";
 import common from '../assets/sass/CommonStyles.module.scss'
 import app from "../App.module.scss";
 import ostrow from "./projectCover/ostrow.png";
+import todo from "./projectCover/todo.jpg";
 
 const projects = [
     {
         id: v1(),
         heading: 'Todolist',
-        demo: '',
-        github: '',
-        image: social
+        demo: 'https://heyaleksej.github.io/todolist',
+        github: 'https://github.com/heyaleksej/todolist',
+        image: todo
     },
     {
         id: v1(),

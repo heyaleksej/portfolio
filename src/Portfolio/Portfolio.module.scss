@@ -1,4 +1,5 @@
 @import "./src/assets/sass/variables";
+
 .wrapper {
   display: grid;
   grid-gap: 3vh;
@@ -8,21 +9,27 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 .item1 {
   grid-area: a;
 }
+
 .item2 {
   grid-area: b;
 }
+
 .item3 {
   grid-area: c;
 }
+
 .item4 {
   grid-area: d;
 }
+
 .item5 {
   grid-area: e;
 }
+
 .item6 {
   grid-area: f;
 }
@@ -56,7 +63,8 @@
     position: relative;
     border-radius: 20px;
     border: 1px solid silver;
-    box-shadow: rgba(35, 35, 42, 0.45) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;  }
+    box-shadow: rgba(35, 35, 42, 0.45) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  }
 }
 
 .tiles .tile img {
@@ -164,6 +172,7 @@
   width: 35vh;
   height: 25vh;
   object-fit: cover;
+  opacity: 0.8
 }
 
 
@@ -173,7 +182,7 @@
   }
 }
 
-@media screen and (min-width: 550px) and (max-width: 960px) and (min-height: 270px) and (max-height: 640px)  {
+@media screen and (min-width: 550px) and (max-width: 960px) and (min-height: 270px) and (max-height: 640px) {
   .wrapper {
     display: grid;
   }
@@ -190,10 +199,10 @@
     font-size: 2.4vh;
   }
 
-    .tiles .tile .details .title {
-      font-size: 3.2vh;
-      font-weight: 600;
-      margin-bottom: 1.6vh;
+  .tiles .tile .details .title {
+    font-size: 3.2vh;
+    font-weight: 600;
+    margin-bottom: 1.6vh;
 
   }
 }

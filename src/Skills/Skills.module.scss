@@ -54,7 +54,7 @@
 
   .skillList {
     justify-content: space-between;
-    padding: 15px;
+    margin-block-start: 0;
     .skillItem {
       min-height:80px;
       padding: 10px;
@@ -72,7 +72,7 @@
 @media (min-width: 551px) and (max-width: 912px) {
   .skillList {
     justify-content: space-between;
-    padding: 15px;
+    padding: 0 15px;
     .skillItem {
       min-height:80px;
       padding: 5px;
@@ -106,6 +106,7 @@
 //horizontal mobile
 @media screen and (min-width: 550px) and (max-width: 960px) and (min-height: 270px) and (max-height: 640px) {
   .skillList {
+    margin-block-start: 0;
     .skillItem {
       padding:5px;
       width: 23%;
@@ -113,6 +114,7 @@
       .aboutIcon {
         width: 25px;
         height: 25px;
+        padding: 0;
       }
       .skillTitle {
         font-size: 14px;
