@@ -2,7 +2,7 @@
 
 .wrapper {
   display: grid;
-  grid-gap: 3vh;
+  grid-gap: 1vh;
   grid-template-areas:
     "a b"
     "c d";
@@ -52,7 +52,7 @@
 
 .tiles {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 1vh;
 
   .tile {
     display: inline-block;
@@ -169,8 +169,8 @@
 
 .projectImage {
   border-radius: 2vh;
-  width: 35vh;
-  height: 25vh;
+  width: 42vh;
+  height: 30vh;
   object-fit: cover;
   opacity: 0.8
 }

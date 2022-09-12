@@ -15,9 +15,10 @@ import git from './../Common/img/color/flickr-svgrepo-com.svg'
 const Footer = () => {
 
     return <span className={s.content}>
-                 <a className={s.item}
-                    href={"https://www.linkedin.com/in/alexey-rogozhnikov-426891223"}
-                    target="_blank">
+                 <>
+                     <a className={s.item}
+                       href={"https://www.linkedin.com/in/alexey-rogozhnikov-426891223"}
+                       target="_blank">
                             <img src={lnkdn} className={s.icon}/>
                  </a>
                  <a className={s.item}
@@ -41,6 +42,8 @@ const Footer = () => {
                     target="_blank">
                             <img src={git} className={s.icon}/>
                  </a>
+                 </>
+        <div className={s.rights}> All rights reserved 2022 &#169;</div>
 
 
             </span>
