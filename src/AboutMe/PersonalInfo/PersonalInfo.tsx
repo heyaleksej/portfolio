@@ -3,7 +3,7 @@ import React from 'react';
 import {NavLink} from "react-router-dom";
 import {ButtonX} from '../../Common/Button/ButtonX';
 // @ts-ignore
-import Cv from './cv/cv.pdf'
+import Cv from './cv/СV_Aleksey_Rogozhnikov.pdf'
 
 const personalInfo = [
     {title: 'Date of birth: ', content: '21 May 1994'},
@@ -26,10 +26,8 @@ export const PersonalInfo = () => {
                 <div className={s.personalInfoTitle}>
                 </div>
                 <div className={s.personalDesc}>
-                    I'm frontend developer who has a results-focused attitude to creating SPA, using React(JS/TS),
-                    Redux.
-                    My free time is dedicated to Codewars, programming tutorials.
-                    <p className={s.subPersonalDesc}>Ready to consider project work and full-time employment. </p>
+                    I'm skilled and highly motivated frontend developer who has a results-focused attitude to creating SPA, using React(JS/TS),
+                    Redux. My free time is dedicated to programming tutorials, improving my English, and becoming familiar with NodeJS and React Native.                     <p className={s.subPersonalDesc}>Ready to consider project work and full-time employment. </p>
                 </div>
                 <span className={s.infoWrapper}>
                     <div className={s.personalInfoInner}>
