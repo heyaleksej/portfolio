@@ -10,7 +10,7 @@
       padding: 0;
       list-style: none;
       position: relative;
-      margin: 1.5vw 0;
+      margin: 1vw 0;
       .expTitleCompany {
         text-decoration: none;
         color: $primaryText;
@@ -74,23 +74,21 @@
 
 @media screen and (min-width: 913px) and (max-width: 1399px) and (min-height: 568px)  {
   .expBox {
-    padding-top: 30px;
+    padding-top: 20px;
     .expList {
-      padding-inline-start: 40px;
-
       .expItem {
-        margin: 25px 0;
+        margin: 15px 0;
 
         .expTitleCompany {
           text-decoration: none;
           color: $textColor;
-          font-size: 2vh;
+          font-size: 1.8vh;
           line-height: 2.8vh
         }
 
         .expHeading {
           color: $accentText;
-          font-size: 2vh;
+          font-size: 1.8vh;
           line-height: 2.2vh;
         }
       }

@@ -9,7 +9,8 @@ const contacts = [
     {title: 'Telegram', text: '@heyalexey', icon: faTelegramPlane},
     {title: 'WhatsApp', text: '@wa.me/79226442144', icon: faWhatsappSquare},
     {title: 'github', text: 'Go to github', icon: faGithub},
-    {title: 'location', text: 'Tbilisi, Georgia', icon: faMapMarkedAlt},
+    {title: 'location', text: `Tbilisi, Georgia`, icon: faMapMarkedAlt},
+
 ]
 
 const contactInfo = contacts.map((el, index) => {
