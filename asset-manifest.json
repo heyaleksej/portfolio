@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.ea260dfe.css",
-    "main.js": "/portfolio/static/js/main.c9eed357.js",
+    "main.js": "/portfolio/static/js/main.45fed407.js",
     "static/js/651.5dfea029.chunk.js": "/portfolio/static/js/651.5dfea029.chunk.js",
     "static/media/404nf.gif": "/portfolio/static/media/404nf.6cb9e34f253d27e7db72.gif",
-    "static/media/CV_Aleksey_Rogozhnikov.pdf": "/portfolio/static/media/CV_Aleksey_Rogozhnikov.2df4b0cf4f6e9bd39812.pdf",
+    "static/media/CV_Aleksey_Rogozhnikov.pdf": "/portfolio/static/media/CV_Aleksey_Rogozhnikov.18a9d6322f1d81497116.pdf",
     "static/media/ava.jpg": "/portfolio/static/media/ava.df87478d8deba35099b1.jpg",
     "static/media/stock-flowers.jpeg": "/portfolio/static/media/stock-flowers.4666f7f65eb962cf3287.jpeg",
     "static/media/todo.jpg": "/portfolio/static/media/todo.175738d2d9e26082b591.jpg",
@@ -33,11 +33,11 @@
     "static/media/html.svg": "/portfolio/static/media/html.b0c3e0d6617bc364b4ca4ea99a8b70f4.svg",
     "static/media/css.svg": "/portfolio/static/media/css.273e3ffabd7f899a47c83bb2921855f2.svg",
     "main.ea260dfe.css.map": "/portfolio/static/css/main.ea260dfe.css.map",
-    "main.c9eed357.js.map": "/portfolio/static/js/main.c9eed357.js.map",
+    "main.45fed407.js.map": "/portfolio/static/js/main.45fed407.js.map",
     "651.5dfea029.chunk.js.map": "/portfolio/static/js/651.5dfea029.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ea260dfe.css",
-    "static/js/main.c9eed357.js"
+    "static/js/main.45fed407.js"
   ]
 }
