@@ -10,6 +10,8 @@ import redux from './image/redux.svg'
 import restA from './image/rest-api.svg'
 import type from './image/typescriptlang-icon.svg'
 import story from './image/storybook.svg'
+import nodejs from './image/nodejs-svgrepo-com.svg'
+import angular from './image/angular-svgrepo-com.svg'
 import {Title} from '../Common/Title/Title';
 import common from '../assets/sass/CommonStyles.module.scss'
 import app from "../App.module.scss";
@@ -21,18 +23,18 @@ type SkillsType = {
 }
 
 const skills: Array<SkillsType> = [
-    {id: '2456666', skill: 'React', icon: react},
-    {id: '74888', skill: 'Redux', icon: redux},
-    {id: '1249', skill: 'REST API', icon: restA},
-    {id: '5436457', skill: 'TDD - Jest', icon: jest},
-    {id: '68543', skill: 'HTML5', icon: html},
-    {id: '345345', skill: 'CSS & preprocessing', icon: css},
-    {id: '1254', skill: 'Storybook', icon: story},
-    {id: '124', skill: 'Github', icon: git},
-    {id: '777', skill: 'TypeScript', icon: type},
-    {id: '643', skill: 'JavaScript', icon: js},
-
-
+    {id: '1', skill: 'React', icon: react},
+    {id: '2', skill: 'Redux', icon: redux},
+    {id: '3', skill: 'REST API', icon: restA},
+    {id: '4', skill: 'TDD - Jest', icon: jest},
+    {id: '5', skill: 'HTML5', icon: html},
+    {id: '6', skill: 'CSS & preprocessing', icon: css},
+    {id: '7', skill: 'Storybook', icon: story},
+    {id: '8', skill: 'Github', icon: git},
+    {id: '9', skill: 'TypeScript', icon: type},
+    {id: '10', skill: 'JavaScript', icon: js},
+    {id: '11', skill: 'NodeJS', icon: nodejs},
+    {id: '12', skill: 'Angular', icon: angular},
 ]
 
 export const Skills = () => {
